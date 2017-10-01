@@ -150,8 +150,57 @@
         <div class="col-md-8">
             <div class="row">
                 <h2 class="text-center">Featured Products</h2>
-            </div>
-        </div>
+				<div class="col-sm-4">
+				   <div class="product-image-wrapper">
+				    <div class="single-products">
+					 <div class="productinfo text-center">
+					 <img src="product1.jpg" alt=""/>
+					 <h2>RM56</h2>
+					 <p>Polo Black Edition</p>
+					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
+					 </div>
+                    </div>
+                   </div>
+				   <div class="choose">
+				     <ul class="navigate">
+					   <li><a href="#"><i class="square"></i>Add to wishlist</a></li>
+					 </ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+				   <div class="product-image-wrapper">
+				    <div class="single-products">
+					 <div class="productinfo text-center">
+					 <img src="product2.jpg" alt=""/>
+					 <h2>RM100</h2>
+					 <p>Stuffed animals</p>
+					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
+					 </div>
+                    </div>
+                   </div>
+				   <div class="choose">
+				     <ul class="navigate">
+					   <li><a href="#"><i class="square"></i>Add to wishlist</a></li>
+					 </ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+				   <div class="product-image-wrapper">
+				    <div class="single-products">
+					 <div class="productinfo text-center">
+					 <img src="crafts.jpg" alt=""/>
+					 <h2>RM120</h2>
+					 <p>Craft supplies</p>
+					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
+					 </div>
+                    </div>
+                   </div>
+				   <div class="choose">
+				     <ul class="navigate">
+					   <li><a href="#"><i class="square"></i>Add to wishlist</a></li>
+					 </ul>
+					</div>
+				</div>
         
         <div class="col-md-2"></div>
     </div>
