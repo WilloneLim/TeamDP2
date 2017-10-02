@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Template use for Bootstrap</title>
+    <title>Deallo House Craft</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
@@ -16,20 +16,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-     <style>
-    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-    }
     
-   
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
     
 </head>
 <body>
@@ -174,6 +161,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Basic AngularJS -->
     <script src="js/angular.min.js"></script>
-    <script src="js/unit.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
