@@ -4,7 +4,7 @@ body{
 }
 
 .navbar{
-    margin-bottom: 50px;
+    margin-bottom: 70px;
      border-radius: 0;
 }
     
@@ -18,5 +18,10 @@ footer{
 .carouselImage{
     width: 100%;
     height: auto;
+}
+
+#form-container{
+margin-top: 80px;
+
 }
 
