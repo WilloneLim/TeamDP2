@@ -41,12 +41,12 @@
 	
         <div class="container-fluid">
 			<div class="Clothing-Accesories"><!--features_items-->
-			   <h2 class="title text-center">Clothing and Accessories</h2>
+			   <h2 class="title text-center">Vintage Art</h2>
 				<div class="col-sm-3">
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
-						  <a href="#"><img src="image/bluedress.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#"><img src="image/art.jpg" class="img-responsive" alt="product"/></a>
 						    <div class="middle">
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
@@ -65,7 +65,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
-						  <a href="#" ><img src="image/reddress.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/art2.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
@@ -83,7 +83,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
-						  <a href="#" ><img src="image/pinkdress.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/art3.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
@@ -101,7 +101,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
-						  <a href="#" ><img src="image/purpledress.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/art4.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
@@ -119,7 +119,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
-						  <a href="#" ><img src="image/whiteshirt.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/art5.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
@@ -137,7 +137,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
-						  <a href="#" ><img src="image/blackshirt.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/art6.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
@@ -155,7 +155,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
-						  <a href="#" ><img src="image/blueshirt.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/art7.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
@@ -173,7 +173,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
-						  <a href="#" ><img src="image/casual.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/art8.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
