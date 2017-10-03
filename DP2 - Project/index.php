@@ -44,19 +44,19 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Clothing and Accesories</a></li>
-                        <li><a href="#">Jewelry</a></li>
-                        <li><a href="#">Craft Supplies</a></li>
-                        <li><a href="#">Room Decor</a></li>
-                        <li><a href="#">Soft Toys</a></li>
-                        <li><a href="#">Vintage arts</a></li>
-                        <li><a href="#">Wedding Accesories</a></li>
+                        <li><a href="clothing.php">Clothing and Accesories</a></li>
+                        <li><a href="jewelry.php">Jewelry</a></li>
+                        <li><a href="crafts.php">Craft Supplies</a></li>
+                        <li><a href="room.php">Room Decor</a></li>
+                        <li><a href="toys.php">Soft Toys</a></li>
+                        <li><a href="arts.php">Vintage arts</a></li>
+                        <li><a href="wedding.php">Wedding Accesories</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Forums</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="sign-up.php"><span class="glyphicon glyphicon-user"></span> Sign UP</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign UP</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
             </ul>
         </div>
@@ -154,52 +154,37 @@
 				   <div class="product-image-wrapper">
 				    <div class="single-products">
 					 <div class="productinfo text-center">
-					 <img src="product1.jpg" alt=""/>
-					 <h2>RM56</h2>
-					 <p>Polo Black Edition</p>
+					 <img src="image/bluedress2.jpg" alt=""/>
+					 <h2>RM126</h2>
+					 <p>Blue Dress</p>
 					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
 					 </div>
                     </div>
                    </div>
-				   <div class="choose">
-				     <ul class="navigate">
-					   <li><a href="#"><i class="square"></i>Add to wishlist</a></li>
-					 </ul>
-					</div>
 				</div>
 				<div class="col-sm-4">
 				   <div class="product-image-wrapper">
 				    <div class="single-products">
 					 <div class="productinfo text-center">
-					 <img src="product2.jpg" alt=""/>
+					 <img src="image/reddress2.jpg" alt=""/>
 					 <h2>RM100</h2>
-					 <p>Stuffed animals</p>
+					 <p>Red Dress</p>
 					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
 					 </div>
                     </div>
-                   </div>
-				   <div class="choose">
-				     <ul class="navigate">
-					   <li><a href="#"><i class="square"></i>Add to wishlist</a></li>
-					 </ul>
-					</div>
+                   </div> 
 				</div>
 				<div class="col-sm-4">
 				   <div class="product-image-wrapper">
 				    <div class="single-products">
 					 <div class="productinfo text-center">
-					 <img src="crafts.jpg" alt=""/>
+					 <img src="image/casual2.jpg" alt=""/>
 					 <h2>RM120</h2>
-					 <p>Craft supplies</p>
+					 <p>Casual</p>
 					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
 					 </div>
                     </div>
-                   </div>
-				   <div class="choose">
-				     <ul class="navigate">
-					   <li><a href="#"><i class="square"></i>Add to wishlist</a></li>
-					 </ul>
-					</div>
+                   </div> 
 				</div>
         
         <div class="col-md-2"></div>
