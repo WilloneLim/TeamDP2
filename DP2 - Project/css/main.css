@@ -18,7 +18,11 @@ footer{
 
 .carouselImage{
     width: 100%;
-    height: auto;
+    
+}
+
+.signuppg{
+    margin-top: 150px;
 }
 
 #loginpg{

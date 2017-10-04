@@ -101,7 +101,7 @@
             <h3>Wedding Accessories</h3>
         </div>
     </div>  
-  </div>
+
 
   <!-- Left and right controls -->
        
@@ -116,9 +116,10 @@
      </div>
     </div>        
   </div>  
-    
+ </div>    
     
     <div class="container-fluid">
+      <div class="row">   
         <div class="col-md-2"></div>
         
         <div class="col-md-8">
@@ -164,6 +165,7 @@
         </div>
         
         <div class="col-md-2"></div>
+        </div>      
     </div>    
    
      
