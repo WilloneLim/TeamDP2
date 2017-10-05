@@ -186,8 +186,15 @@
 				        </div>
 				    </div>
 				</div>
-				
-				
 			</div>
 		</div>
+		
+	<script src="js/jquery.min.js"></script>
+    <!-- All Bootstrap plug-ins file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Basic AngularJS -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/unit.js"></script>
+</body>
+</html>
 
