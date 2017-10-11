@@ -55,7 +55,8 @@
                 $_SESSION['login_user']=$username;
                 header("location: index.php");
                 echo "Success";
-            }else
+            }
+            else
             {
                 $error = "Username or Password is invalid";
                 echo "FAILLLL";
