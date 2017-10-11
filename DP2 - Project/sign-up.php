@@ -37,9 +37,9 @@
         if(isset($_POST['submit']))
         {
             
-        $Name = $_POST["userName"];
-        $Email = $_POST["userEmail"];
-        $Password = $_POST["userPassword"];
+        $Name = mysqli_real_escape_string($conn, $_POST["userName"]);
+        $Email = mysqli_real_escape_string($conn, $_POST["userEmail"]);
+        $Password = mysqli_real_escape_string($conn, $_POST["userPassword"]);
         
         $sql = "INSERT INTO users (username, useremail, userpassword) VALUES ('".$Name."' ,'".$Email."' ,'".$Password."')";
           
@@ -50,7 +50,7 @@
         }
         else
         {
-            echo "Inserted";
+            header("location: login.php");
         }
             
         }
@@ -69,7 +69,7 @@
                         </div>
                         
                         <div class="panel-body">
-                            <form method="post" name="myForm" role="form" onsubmit="return checkForm(myForm);">
+                            <form  method="post" name="myForm" role="form" onsubmit="return checkForm(myForm);">
                                 
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
