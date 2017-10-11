@@ -8,6 +8,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
+		<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -32,8 +34,9 @@
                 <li><a href="#">Forums</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign UP</a></li>
+                 <li><a href="sign_up.php"><span class="glyphicon glyphicon-user"></span> Sign UP</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+				<li><a href="Pro_regis.php"><span class="glyphicon glyphicon-log-in"></span> Product registration </a></li>
             </ul>
         </div>
     </nav>
@@ -55,6 +58,35 @@
 						    </div>
 						     <a href="#" class="button">Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
+							 
+							 
+							 <!-- create the code fot Modal  -->
+							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Product Details</h4>
+									</div>
+									<div class="modal-body">
+									  <p>Some text in the modal.</p>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>
+							  <!-- End ofModal code -->
+							  
+							  
+							 
 					     </div>
 				        </div>
 				    </div>
@@ -74,6 +106,33 @@
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
+							 
+							 							  <!-- create the code fot Modal  -->
+							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Product Details</h4>
+									</div>
+									<div class="modal-body">
+									  <p>Some text in the modal.</p>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>
+							  <!-- End ofModal code -->
+							  
+							  
 					     </div>
 				        </div>
 				    </div>
@@ -92,6 +151,34 @@
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
+							 
+							 
+							 							  <!-- create the code fot Modal  -->
+							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Product Details</h4>
+									</div>
+									<div class="modal-body">
+									  <p>Some text in the modal.</p>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>
+							  <!-- End ofModal code -->
+							  
+							  
 					     </div>
 				        </div>
 				    </div>
@@ -110,6 +197,35 @@
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 					         <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
+							 
+							 
+							 
+							 							  <!-- create the code fot Modal  -->
+							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Product Details</h4>
+									</div>
+									<div class="modal-body">
+									  <p>Some text in the modal.</p>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>
+							  <!-- End ofModal code -->
+							  
+							  
 						 </div>
 				        </div>
 				    </div>
@@ -128,6 +244,34 @@
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
+							 
+							 
+							 							  <!-- create the code fot Modal  -->
+							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Product Details</h4>
+									</div>
+									<div class="modal-body">
+									  <p>Some text in the modal.</p>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>
+							  <!-- End ofModal code -->
+							  
+							  
 					     </div>
 				        </div>
 				    </div>
@@ -146,6 +290,33 @@
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
+							 
+							 							  <!-- create the code fot Modal  -->
+							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Product Details</h4>
+									</div>
+									<div class="modal-body">
+									  <p>Some text in the modal.</p>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>
+							  <!-- End ofModal code -->
+							  
+							  
 					     </div>
 				        </div>
 				    </div>
@@ -164,6 +335,34 @@
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
+							 
+							 
+							 							  <!-- create the code fot Modal  -->
+							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Product Details</h4>
+									</div>
+									<div class="modal-body">
+									  <p>Some text in the modal.</p>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>
+							  <!-- End ofModal code -->
+							  
+							  
 					     </div>
 				        </div>
 				    </div>
@@ -182,19 +381,39 @@
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
+							 
+							 							  <!-- create the code fot Modal  -->
+							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								
+								  <!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Product Details</h4>
+									</div>
+									<div class="modal-body">
+									  <p>Some text in the modal.</p>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								  </div>
+								  
+								</div>
+							  </div>
+							  <!-- End ofModal code -->
+							  
+							  
 					     </div>
 				        </div>
 				    </div>
 				</div>
+				
+				
 			</div>
 		</div>
-		
-	<script src="js/jquery.min.js"></script>
-    <!-- All Bootstrap plug-ins file -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Basic AngularJS -->
-    <script src="js/angular.min.js"></script>
-    <script src="js/unit.js"></script>
-</body>
-</html>
 
