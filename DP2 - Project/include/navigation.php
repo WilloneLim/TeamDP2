@@ -20,19 +20,35 @@
                 <li><a href="#">Forums</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <?php     
+                <li>
+                <?php 
+                
                 if(!isset($_SESSION['login_user']))
                 {
-                    echo ' <li><a href="sign-up.php"><span class="glyphicon glyphicon-user"></span> Sign UP</a></li>';
-                    echo ' <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>';
-                }else
-                {
-                    echo ' <li><span class="glyphicon glyphicon-user"></span>' .$_SESSION['login_user']. '</li>';
-                    echo ' <li><span class="glyphicon glyphicon-log-out"></span>Logout</li>';
-                    
+                    echo '<a href="sign-up.php"><span class="glyphicon glyphicon-user"></span> Sign UP</a>';
                 }
-               
-              ?>        
+                else
+                {
+                    echo '<a href="#"><span class="glyphicon glyphicon-user"></span>' .$_SESSION["login_user"]. '</a>';
+                }
+                
+                ?>
+                </li>    
+                
+                <li>    
+                <?php
+                
+                if(!isset($_SESSION['login_user']))
+                {
+                    echo '<a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login </a>';
+                }
+                else
+                {
+                    echo '<a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout </a>';
+                }
+                
+                ?>
+                </li>    
             </ul>
         </div>
     </nav>
