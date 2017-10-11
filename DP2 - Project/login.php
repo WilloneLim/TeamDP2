@@ -19,6 +19,55 @@
     </head>
     <body id="loginBody">
         
+         <?php
+        
+        session_start();
+        $error="";
+       
+        if(isset($_POST['submit']))
+        {
+            $username = $_POST['loginname'];
+            $userpassword = $_POST['loginpassword'];    
+            
+            $connection = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
+            
+            if(mysqli_connect_errno())
+            {
+            echo 'Database connection failed with the following errors: ' . mysqli_connect_error();
+            die();
+            }
+        
+            if(!mysqli_select_db($connection, 'deallo'))
+            {
+            die("Uh oh, couldn't select database --> deallo" . $connection->connect_error . '>');
+           }
+            
+            $username = stripslashes($username);
+            $userpassword = stripslashes($userpassword);
+            $username = mysqli_real_escape_string($connection,$username);
+            $userpassword = mysqli_real_escape_string($connection, $userpassword);
+            
+            $query = mysqli_query($connection, "SELECT * FROM users WHERE userpassword = '$userpassword' AND username = '$username'");
+            $rows = mysqli_num_rows($query);
+            
+            if($rows == 1)
+            {
+                $_SESSION['login_user']=$username;
+                header("location: index.php");
+                echo "Success";
+            }
+            else
+            {
+                $error = "Username or Password is invalid";
+                echo "FAILLLL";
+            }
+            
+            mysqli_close($connection);
+            
+        }
+        
+        ?>
+        
         <?php include("include/navigation.php"); ?>
         
         <div class="container" id="loginpg">
@@ -29,13 +78,13 @@
                     <h3>Login To Account</h3>
                     <form method="post">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Username">
+                            <input type="text" name="loginname" class="form-control" placeholder="Enter Username">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Enter Password">
+                            <input type="password" name="loginpassword" class="form-control" placeholder="Enter Password">
                         </div>
                         
-                        <button type="submit" class="btn btn-primary form-control">Login</button>
+                        <button type="submit" name="submit" class="btn btn-primary form-control">Login</button>
                     </form>
                 </div>
             </div>

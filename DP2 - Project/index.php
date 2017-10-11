@@ -34,6 +34,7 @@
 </head>
 <body>
     
+    <?php session_start(); ?>
     <?php include ("include/navigation.php"); ?>
     
 
