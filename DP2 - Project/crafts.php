@@ -54,7 +54,7 @@
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
 							<div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM50<i></i></span></a>
 						    </div>
 						     <a href="#" class="button">Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -102,7 +102,7 @@
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM90<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -147,7 +147,7 @@
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM70<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -193,7 +193,7 @@
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM20<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 					         <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -240,7 +240,7 @@
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM15<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -286,7 +286,7 @@
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM35<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -331,7 +331,7 @@
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM40<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -377,7 +377,7 @@
 							  <a href="#"><div class="text">Buy</div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM20<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
