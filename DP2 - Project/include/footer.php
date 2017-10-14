@@ -40,7 +40,7 @@
     
     
         <form method="post" class="form-inline">Subscribe to our newsletter:
-            <input type="email" name="subEmail" class="form-control" size="50" placeholder="Email Address">
+            <input type="email" name="subEmail" class="form-control" size="50" placeholder="Email Address" >
             <button type="button" name="subscribe" class="btn btn-danger">Sign Up</button>
         </form>
 </footer>

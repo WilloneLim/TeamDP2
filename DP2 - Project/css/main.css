@@ -16,11 +16,12 @@ footer{
     margin-bottom: 0px;
 }
 
-.carouselImage{
-    width: 100%;
-    
-    
+.carousel-inner > .item > img
+{
+    width: 1000px;
+    height: 575px;
 }
+
 
 .signuppg{
     margin-top: 150px;

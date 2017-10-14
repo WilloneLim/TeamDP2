@@ -76,6 +76,14 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
+                                        
+                                        <form action="#" method="POST" class="form-inline">
+                                            <table>
+                                                <tr><td colspan="2">Comment:</td></tr>
+                                                <tr><td colspan="2"><textarea name="comment"></textarea></td></tr>
+                                                <tr><td colspan="2"><input type="submit" name="commentSubmit" value="Comment" /></td></tr>
+                                            </table>
+                                        </form>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -122,6 +130,14 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
+                                        
+                                        <form action="#" method="POST" class="form-inline">
+                                            <table>
+                                                <tr><td colspan="2">Comment:</td></tr>
+                                                <tr><td colspan="2"><textarea name="comment"></textarea></td></tr>
+                                                <tr><td colspan="2"><input type="submit" name="commentSubmit" value="Comment" /></td></tr>
+                                            </table>
+                                        </form>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -167,6 +183,14 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
+                                        
+                                        <form action="#" method="POST" class="form-inline">
+                                            <table>
+                                                <tr><td colspan="2">Comment:</td></tr>
+                                                <tr><td colspan="2"><textarea name="comment"></textarea></td></tr>
+                                                <tr><td colspan="2"><input type="submit" name="commentSubmit" value="Comment" /></td></tr>
+                                            </table>
+                                        </form>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -210,6 +234,14 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
+                                        
+                                        <form action="#" method="POST" class="form-inline">
+                                            <table>
+                                                <tr><td colspan="2">Comment:</td></tr>
+                                                <tr><td colspan="2"><textarea name="comment"></textarea></td></tr>
+                                                <tr><td colspan="2"><input type="submit" name="commentSubmit" value="Comment" /></td></tr>
+                                            </table>
+                                        </form>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -258,6 +290,14 @@
 									<div class="modal-body">
 									   <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
+                                        
+                                        <form action="#" method="POST" class="form-inline">
+                                            <table>
+                                                <tr><td colspan="2">Comment:</td></tr>
+                                                <tr><td colspan="2"><textarea name="comment"></textarea></td></tr>
+                                                <tr><td colspan="2"><input type="submit" name="commentSubmit" value="Comment" /></td></tr>
+                                            </table>
+                                        </form>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -306,6 +346,14 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
+                                        
+                                        <form action="#" method="POST" class="form-inline">
+                                            <table>
+                                                <tr><td colspan="2">Comment:</td></tr>
+                                                <tr><td colspan="2"><textarea name="comment"></textarea></td></tr>
+                                                <tr><td colspan="2"><input type="submit" name="commentSubmit" value="Comment" /></td></tr>
+                                            </table>
+                                        </form>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -355,6 +403,14 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
+                                        
+                                        <form action="#" method="POST" class="form-inline">
+                                            <table>
+                                                <tr><td colspan="2">Comment:</td></tr>
+                                                <tr><td colspan="2"><textarea name="comment"></textarea></td></tr>
+                                                <tr><td colspan="2"><input type="submit" name="commentSubmit" value="Comment" /></td></tr>
+                                            </table>
+                                        </form>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -403,6 +459,14 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
+                                        
+                                        <form action="#" method="POST" class="form-inline">
+                                            <table>
+                                                <tr><td colspan="2">Comment:</td></tr>
+                                                <tr><td colspan="2"><textarea name="comment"></textarea></td></tr>
+                                                <tr><td colspan="2"><input type="submit" name="commentSubmit" value="Comment" /></td></tr>
+                                            </table>
+                                        </form>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

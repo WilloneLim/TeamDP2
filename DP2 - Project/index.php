@@ -26,8 +26,9 @@
 
 
  <div class="row"> 
-  <div class="col-md-12">   
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="col-md-2"></div>     
+  <div class="col-md-8">   
+   <div id="myCarousel" class="carousel slide row" data-ride="carousel">
   <!-- Indicators -->
      <ol class="carousel-indicators">
        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -41,49 +42,49 @@
 
   <div class="carousel-inner">
     <div class="item active">
-      <img src="image/clothing-carousel.jpeg" alt="clothing" class="carouselImage">
+      <img src="image/clothingv2.jpeg" alt="clothing" >
         <div class="carousel-caption">
             <h3>Clothing and Accesories</h3>
         </div>
     </div>
 
     <div class="item">
-      <img src="image/jewelry-carousel.jpeg" alt="Jewelry" class="carouselImage">
+      <img src="image/Jewellery_carouselV2.jpg" alt="Jewelry" >
         <div class="carousel-caption">
             <h3>Jewelries</h3>
         </div>
     </div>
 
     <div class="item">
-      <img src="image/roomDecor-carousel.jpeg" alt="Room-Decor" class="carouselImage">
+      <img src="image/romm_decorV2.jpeg" alt="Room-Decor" >
         <div class="carousel-caption">
             <h3>Room Decorations</h3>
         </div>
     </div>
       
     <div class="item">
-      <img src="image/Soft_Toys.jpg" alt="soft toys" class="carouselImage">
+      <img src="image/toys_carouselv2.jpeg" alt="soft toys" >
         <div class="carousel-caption">
             <h3>Soft Toys</h3>
         </div>
     </div>
       
     <div class="item">
-      <img src="image/craft_supplies.jpeg" alt="Craft Supplies" class="carouselImage">
+      <img src="image/craft_carouselv2.jpeg" alt="Craft Supplies" >
         <div class="carousel-caption">
             <h3>Craft Supplies</h3>
         </div>
     </div>
       
     <div class="item">
-      <img src="image/Vintage_art.jpg" alt="vintage art" class="carouselImage">
+      <img src="image/vintage_artsv2.jpeg" alt="vintage art" >
         <div class="carousel-caption">
             <h3>Vintage Art</h3>
         </div>
     </div>
       
     <div class="item">
-      <img src="image/Wedding_accessories.jpeg" alt="wedding accessories" class="carouselImage">
+      <img src="image/wedding_accesoriesv2.jpeg" alt="wedding accessories" >
         <div class="carousel-caption">
             <h3>Wedding Accessories</h3>
         </div>
@@ -103,7 +104,9 @@
      </div>
     </div>        
   </div>  
- </div>    
+  <div class="col-md-2"></div>     
+ </div>
+ 
     
     <div class="container-fluid">
       <div class="row">   

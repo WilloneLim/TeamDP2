@@ -98,7 +98,7 @@
                                     
                                 </div>
                                 
-                                <input type="submit" name="submit" value="Sign Up" class="btn btn-info btn-block"> 
+                                <input type="submit" name="submit" value="Sign Up" class="btn btn-info btn-block" > 
                                 
                             </form>
                         </div>
