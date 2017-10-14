@@ -54,7 +54,7 @@
 							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></div></a>
 							</div>
 							<div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
 						    </div>
 						     <a href="#" class="button">Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -104,7 +104,7 @@
 							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM50<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -154,7 +154,7 @@
  </div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM70<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -204,7 +204,7 @@
 </div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM70<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 					         <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -255,7 +255,7 @@
 							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -306,7 +306,7 @@
 							  <a href="#"><div class="text">	 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM110<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -355,7 +355,7 @@
 							  <a href="#"><div class="text">	 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM70<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -405,7 +405,7 @@
 							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
+						     <a href="#" class="item"><span class="price">RM90<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
