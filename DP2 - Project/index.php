@@ -41,49 +41,49 @@
 
   <div class="carousel-inner">
     <div class="item active">
-      <img src="image/clothing-carousel.jpeg" alt="clothing" class="carouselImage">
+      <img src="image/newphoto1.jpeg" alt="clothing" class="img-responsive">
         <div class="carousel-caption">
             <h3>Clothing and Accesories</h3>
         </div>
     </div>
 
     <div class="item">
-      <img src="image/jewelry-carousel.jpeg" alt="Jewelry" class="carouselImage">
+      <img src="image/newphoto2.jpg" alt="Jewelry" class="img-responsive">
         <div class="carousel-caption">
             <h3>Jewelries</h3>
         </div>
     </div>
 
     <div class="item">
-      <img src="image/roomDecor-carousel.jpeg" alt="Room-Decor" class="carouselImage">
+      <img src="image/newphoto3.jpeg" alt="Room-Decor" class="img-responsive">
         <div class="carousel-caption">
             <h3>Room Decorations</h3>
         </div>
     </div>
       
     <div class="item">
-      <img src="image/Soft_Toys.jpg" alt="soft toys" class="carouselImage">
+      <img src="image/newphoto4_2.jpeg" alt="soft toys" class="img-responsive">
         <div class="carousel-caption">
             <h3>Soft Toys</h3>
         </div>
     </div>
       
     <div class="item">
-      <img src="image/craft_supplies.jpeg" alt="Craft Supplies" class="carouselImage">
+      <img src="image/newphoto4.jpeg" alt="Craft Supplies" class="img-responsive">
         <div class="carousel-caption">
             <h3>Craft Supplies</h3>
         </div>
     </div>
       
     <div class="item">
-      <img src="image/Vintage_art.jpg" alt="vintage art" class="carouselImage">
+      <img src="image/newphoto5.jpeg" alt="vintage art" class="img-responsive">
         <div class="carousel-caption">
             <h3>Vintage Art</h3>
         </div>
     </div>
       
     <div class="item">
-      <img src="image/Wedding_accessories.jpeg" alt="wedding accessories" class="carouselImage">
+      <img src="image/newphoto6.jpeg" alt="wedding accessories" class="img-responsive">
         <div class="carousel-caption">
             <h3>Wedding Accessories</h3>
         </div>
