@@ -17,7 +17,7 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     </head>
-    <body>
+    <body id="signupbd">
         
         <?php include("include/navigation.php"); ?>
         
