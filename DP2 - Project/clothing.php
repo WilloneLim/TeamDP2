@@ -8,39 +8,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
+	
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.php">Deallo House Craft</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="home"><a href="index.php">Home</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                       <li><a href="clothing.php">Clothing and Accesories</a></li>
-                        <li><a href="jewelry.php">Jewelry</a></li>
-                        <li><a href="crafts.php">Craft Supplies</a></li>
-                        <li><a href="room.php">Room Decor</a></li>
-                        <li><a href="toys.php">Soft Toys</a></li>
-                        <li><a href="arts.php">Vintage arts</a></li>
-                        <li><a href="wedding.php">Wedding Accesories</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Forums</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="sign_up.php"><span class="glyphicon glyphicon-user"></span> Sign UP</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
-				<li><a href="Pro_regis.php"><span class="glyphicon glyphicon-log-in"></span> Product registration </a></li>
-            </ul>
-        </div>
-    </nav>
+
+    <?php session_start(); ?>
+    <?php include ("include/navigation.php"); ?>
 	
 	
         <div class="container-fluid">
@@ -112,9 +86,11 @@
 											<label class="half" for="halfstar" title="Worst"></label>
 											
 										</fieldset>
-									 
-									  
-									  
+                                        
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg1"></textarea></label><br/>
+                                            <input type="submit" name="md1" value="Post">
+                                        </form>
 									  
 									</div>
 									<div class="modal-footer">
@@ -196,6 +172,11 @@
 											<label class="half" for="halfstar2" title="Worst"></label>
 											
 										</fieldset>
+                                        
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg1"></textarea></label><br/>
+                                            <input type="submit" name="md1" value="Post">
+                                        </form>
 									 
 									</div>
 									<div class="modal-footer">
@@ -276,6 +257,11 @@
 											<label class="half" for="halfstar3" title="Worst"></label>
 											
 										</fieldset>
+                                        
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg1"></textarea></label><br/>
+                                            <input type="submit" name="md1" value="Post">
+                                        </form>
 									 
 									</div>
 									<div class="modal-footer">
@@ -354,6 +340,11 @@
 											<label class="half" for="halfstar4" title="Worst"></label>
 											
 										</fieldset>
+                                        
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg1"></textarea></label><br/>
+                                            <input type="submit" name="md1" value="Post">
+                                        </form>
 									 
 									</div>
 									<div class="modal-footer">
@@ -437,6 +428,11 @@
 											<label class="half" for="halfstar5" title="Worst"></label>
 											
 										</fieldset>
+                                        
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg1"></textarea></label><br/>
+                                            <input type="submit" name="md1" value="Post">
+                                        </form>
 									 
 									</div>
 									<div class="modal-footer">
@@ -520,6 +516,11 @@
 											<label class="half" for="halfstar6" title="Worst"></label>
 											
 										</fieldset>
+                                        
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg1"></textarea></label><br/>
+                                            <input type="submit" name="md1" value="Post">
+                                        </form>
 									 
 									</div>
 									<div class="modal-footer">
@@ -604,6 +605,11 @@
 											<label class="half" for="halfstar7" title="Worst"></label>
 											
 										</fieldset>
+                                        
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg1"></textarea></label><br/>
+                                            <input type="submit" name="md1" value="Post">
+                                        </form>
 									 
 									</div>
 									<div class="modal-footer">
@@ -687,6 +693,11 @@
 											<label class="half" for="halfstar8" title="Worst"></label>
 											
 										</fieldset>
+                                        
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg1"></textarea></label><br/>
+                                            <input type="submit" name="md1" value="Post">
+                                        </form>
 									 
 									</div>
 									<div class="modal-footer">
@@ -710,3 +721,12 @@
 			</div>
 		</div>
 
+    <!-- jQuery – required for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- All Bootstrap plug-ins file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Basic AngularJS -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/unit.js"></script>
+    </body>
+</html>    
