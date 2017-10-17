@@ -51,17 +51,17 @@
 						 <div class="products">
 						  <a href="#"><img src="image/brush.jpg" class="img-responsive" alt="product"/></a>
 						    <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button></a>
 							</div>
 							<div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM50<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button">Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 
 							 
 							 <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+							 
 
 							  <!-- Modal -->
 							  <div class="modal fade" id="myModal" role="dialog">
@@ -74,7 +74,10 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
+									  <p>Drowing brush.</p>
+									  <p>price: $10.</p>
+									   <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/brush.jpg" class="imag" alt="product"/></div></div>
+									  
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -99,19 +102,19 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/crayon.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM90<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 
 							 							  <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+							
 
 							  <!-- Modal -->
-							  <div class="modal fade" id="myModal" role="dialog">
+							  <div class="modal fade" id="myModal2" role="dialog">
 								<div class="modal-dialog">
 								
 								  <!-- Modal content-->
@@ -121,7 +124,9 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
+									  <p>A drowing pen box.</p>
+									   <p>price: $10.</p>
+									  <div class="zoomin frame">  <div class="imag"><a href="#"><img src="image/crayon.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -144,20 +149,20 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/glue.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM70<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 
 							 
 							 							  <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+							 
 
 							  <!-- Modal -->
-							  <div class="modal fade" id="myModal" role="dialog">
+							  <div class="modal fade" id="myModal3" role="dialog">
 								<div class="modal-dialog">
 								
 								  <!-- Modal content-->
@@ -167,7 +172,10 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
+									  <p>Craft glue.</p>
+									  <p>price: $10.</p>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/glue.jpg" class="imag" alt="product"/></div></div>
+									  
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -190,10 +198,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/markers.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM20<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 					         <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -201,10 +209,10 @@
 							 
 							 
 							 							  <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+							 
 
 							  <!-- Modal -->
-							  <div class="modal fade" id="myModal" role="dialog">
+							  <div class="modal fade" id="myModal4" role="dialog">
 								<div class="modal-dialog">
 								
 								  <!-- Modal content-->
@@ -214,7 +222,9 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
+									  <p>nice colorfull Marker.</p>
+									  <p>price: $10.</p>
+									   <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/markers.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -237,20 +247,20 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/glitter.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM15<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 
 							 
 							 							  <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+							
 
 							  <!-- Modal -->
-							  <div class="modal fade" id="myModal" role="dialog">
+							  <div class="modal fade" id="myModal5" role="dialog">
 								<div class="modal-dialog">
 								
 								  <!-- Modal content-->
@@ -260,7 +270,9 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
+									  <p>glitter box.</p>
+									  <p>price: $10.</p>
+									 <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/glitter.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -283,19 +295,19 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/paper.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM35<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 
 							 							  <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+							
 
 							  <!-- Modal -->
-							  <div class="modal fade" id="myModal" role="dialog">
+							  <div class="modal fade" id="myModal6" role="dialog">
 								<div class="modal-dialog">
 								
 								  <!-- Modal content-->
@@ -305,7 +317,9 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
+									  <p>Colorful wrapinfpaper.</p>
+									  <p>price: $10.</p>
+									   <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/paper.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -328,20 +342,20 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/ribbon.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button>
+</a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM40<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 
 							 
 							 							  <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
-
+							 
 							  <!-- Modal -->
-							  <div class="modal fade" id="myModal" role="dialog">
+							  <div class="modal fade" id="myModal7" role="dialog">
 								<div class="modal-dialog">
 								
 								  <!-- Modal content-->
@@ -351,7 +365,9 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
+									  <p>Different color ribbon.</p>
+									  <p>price: $10.</p>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/ribbon.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -374,19 +390,19 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/tape.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM20<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 
 							 							  <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Product</button>
+							
 
 							  <!-- Modal -->
-							  <div class="modal fade" id="myModal" role="dialog">
+							  <div class="modal fade" id="myModal8" role="dialog">
 								<div class="modal-dialog">
 								
 								  <!-- Modal content-->
@@ -396,7 +412,10 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
+									  <p>waretape.</p>
+									    <p>price: $10.</p>
+										<div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/tape.jpg" class="imag" alt="product"/></div></div>
+									  
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

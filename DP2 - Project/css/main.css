@@ -193,4 +193,32 @@ fieldset,label{
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 
+.imag{
+    padding: 5px;
+	width: 200px;
+    height: auto;
+	display: block;
+    margin: 0 auto;
+	border-radius: 8px;
+	
+	
+}
+.frame {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+.zoomin img {
+  height: 200px;
+  width: 200px;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+.zoomin img:hover {
+  width: 300px;
+  height: 300px;
+}
+
 
