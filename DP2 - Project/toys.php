@@ -51,10 +51,10 @@
 						 <div class="products">
 						  <a href="#"><img src="image/christmas.jpg" class="img-responsive" alt="product"/></a>
 						    <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
 							</div>
 							<div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM90<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button">Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -77,6 +77,7 @@
 									  <p>Soft toys are such a wonderful source of comfort. Since mom and dad can’t be there for every scary moment or nightmare, teddy bears can be real lifesavers for all!</p>
 									  <p>Name: Mr. Bear </p>
 									  <p> Price : $52</p>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/christmas.jpg" class="imag" alt="product"/></div></div>
 									  
 									</div>
 									<div class="modal-footer">
@@ -101,10 +102,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/green.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">		 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -127,6 +128,7 @@
 									  <p>Soft toys are such a wonderful source of comfort. Since mom and dad can’t be there for every scary moment or nightmare, teddy bears can be real lifesavers for all!</p>
 									  <p>Name: Grizzlee </p>
 									  <p> Price : $52</p>
+									   <div class="imag"><a href="#"><img src="image/green.jpg" class="imag" alt="product"/></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -149,10 +151,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/hippo.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM70<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -175,7 +177,8 @@
 									   <p>Soft toys are such a wonderful source of comfort. Since mom and dad can’t be there for every scary moment or nightmare, teddy bears can be real lifesavers for all!</p>
 									  <p>Name: Scout </p>
 									  <p> Price : $52</p>
-									</div>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/hippo.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -197,10 +200,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/lion.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM50<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 					         <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -223,7 +226,8 @@
 									  <p>Soft toys are such a wonderful source of comfort. Since mom and dad can’t be there for every scary moment or nightmare, teddy bears can be real lifesavers for all!</p>
 									  <p>Name: Hiker </p>
 									  <p> Price : $52</p>
-									</div>
+									 <div class="zoomin frame">  <div class="imag"><a href="#"><img src="image/lion.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -245,10 +249,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/monkey.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">	 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM54<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -271,7 +275,8 @@
 									 <p>Soft toys are such a wonderful source of comfort. Since mom and dad can’t be there for every scary moment or nightmare, teddy bears can be real lifesavers for all!</p>
 									  <p>Name: MikyMouse  </p>
 									  <p> Price : $52</p>
-									</div>
+									   <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/monkey.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -293,10 +298,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/alpa.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -319,7 +324,8 @@
 									 <p>Soft toys are such a wonderful source of comfort. Since mom and dad can’t be there for every scary moment or nightmare, teddy bears can be real lifesavers for all!</p>
 									  <p>Name: Penny </p>
 									  <p> Price : $52</p>
-									</div>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/alpa.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -341,10 +347,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/teddy.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM84<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -367,7 +373,8 @@
 									  <p>Soft toys are such a wonderful source of comfort. Since mom and dad can’t be there for every scary moment or nightmare, teddy bears can be real lifesavers for all!</p>
 									  <p>Name: Horace </p>
 									  <p> Price : $52</p>
-									</div>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/teddy.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -389,10 +396,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/teddybear.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM53<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -415,6 +422,7 @@
 									 <p>Soft toys are such a wonderful source of comfort. Since mom and dad can’t be there for every scary moment or nightmare, teddy bears can be real lifesavers for all!</p>
 									  <p>Name: Armor </p>
 									  <p> Price : $52</p>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/teddybear.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

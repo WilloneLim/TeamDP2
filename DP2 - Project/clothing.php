@@ -26,7 +26,7 @@
 						 <div class="products">
 						  <a href="#"><img src="image/bluedress.jpg" class="img-responsive" alt="product"/></a>
 						    <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
 							</div>
 							<div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM120<i></i></span></a>
@@ -51,7 +51,8 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  
+									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/bluedress.jpg" class="imag" alt="product"/></div>
+									</div>
 									 
 									    <fieldset class="rating" >
 										
@@ -115,7 +116,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/reddress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM110<i></i></span></a>
@@ -138,7 +139,8 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  
+									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/reddress.jpg" class="imag" alt="product"/></div>
+									</div>
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star2" name="rating2" value="5"/>
@@ -199,7 +201,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/pinkdress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
@@ -223,7 +225,8 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  
+									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/pinkdress.jpg" class="imag" alt="product"/></div>
+									</div>
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star3" name="rating3" value="5"/>
@@ -283,7 +286,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/purpledress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM160<i></i></span></a>
@@ -306,7 +309,8 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  
+									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/purpledress.jpg" class="imag" alt="product"/></div>
+									</div>
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star4" name="rating4" value="5"/>
@@ -369,7 +373,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/whiteshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
@@ -394,7 +398,8 @@
 									<div class="modal-body">
 									   <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  
+									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/whiteshirt.jpg" class="imag" alt="product"/></div>
+									</div>
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star5" name="rating5" value="5"/>
@@ -457,7 +462,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/blackshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM200<i></i></span></a>
@@ -482,7 +487,8 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  
+									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blackshirt.jpg" class="imag" alt="product"/></div>
+									</div>
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star6" name="rating6" value="5"/>
@@ -546,7 +552,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/blueshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
@@ -571,7 +577,8 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  
+									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blueshirt.jpg" class="imag" alt="product"/></div>
+									</div>
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star7" name="rating7" value="5"/>
@@ -634,7 +641,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/casual.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM120<i></i></span></a>
@@ -659,7 +666,8 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  
+									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/casual.jpg" class="imag" alt="product"/></div>
+									</div>
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star8" name="rating8" value="5"/>

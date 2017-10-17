@@ -51,17 +51,17 @@
 						 <div class="products">
 						  <a href="#"><img src="image/access.jpg" class="img-responsive" alt="product"/></a>
 						    <div class="middle">
-							  <a href="#"><div class="text"></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
 							</div>
 							<div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM90<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button">Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 						 							 
 							 
 							 <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button>
+							 
 
 							  <!-- Modal -->
 							  <div class="modal fade" id="myModal1" role="dialog">
@@ -74,9 +74,11 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									<p>Some text in the modalghjkkhkjlkjkjj.</p>
-									 
-									</div>
+									  <p>A white color wedding dress </p>
+									  <p>Price :$150</p>
+									  <p>Warranty:1 year.</p>
+									   <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/access.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -99,10 +101,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/bronze.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM240<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -125,7 +127,8 @@
 									   <p>A colorful weeding lady’s handbag </p>
 									  <p>Price :$150</p>
 									  <p>Warranty:1 year.</p>
-									</div>
+									    <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/bronze.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -147,10 +150,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/wed.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM190<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -174,6 +177,7 @@
 									   <p>A beautiful weeding necklace set  </p>
 									  <p>Price :$350</p>
 									  <p>Warranty:5 year.</p>
+									    <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/wed.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -196,17 +200,17 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/wed2.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">Buy</div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM186<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 					         <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
 							 						 							 
 							 
 							 <!-- create the code fot Modal  -->
-							 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button>
+							 
 
 							  <!-- Modal -->
 							  <div class="modal fade" id="myModal4" role="dialog">
@@ -219,8 +223,11 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Some text in the modal.</p>
-									</div>
+									 p>A beautiful makeup set  </p>
+									  <p>Price :$350</p>
+									  <p>Warranty:5 year.</p>
+									    <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/wed2.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -242,10 +249,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/wed3.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -268,7 +275,8 @@
 									  <p>A nice weeding hair band with white stone.</p>
 									   <p>Price :$350</p>
 									  <p>Warranty:5 year.</p>
-									</div>
+									    <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/wed3.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -290,10 +298,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/wed4.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM420<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -316,7 +324,8 @@
 									  <p>A nice white color leather shoe made in korai. New arrival stoke is limited.</p>
 									  <p>Price :$150</p>
 									  <p>Warranty:1 year.</p>
-									</div>
+									    <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/wed4.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -338,10 +347,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/wed5.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM250<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -364,7 +373,8 @@
 									  <p>The colorful Matching shoe with hair band, made in japan. The shoe and bag is made by lather. New arrival stoke is limited.</p>
 									    <p>Price :$150</p>
 									  <p>Warranty:1 year.</p>
-									</div>
+									     <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/wed5.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -386,10 +396,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/wedaccess.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM230<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -412,6 +422,7 @@
 									  <p>The colorful Matching shoe with handbag, made in japan. The shoe and bag is made by lather. New arrival stoke is limited.</p>
 									  <p>Price :$150</p>
 									  <p>Warranty:1 year.</p>
+									    <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/wedaccess.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -51,10 +51,10 @@
 						 <div class="products">
 						  <a href="#"><img src="image/carpet.jpg" class="img-responsive" alt="product"/></a>
 						    <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
 							</div>
 							<div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM90<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button">Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -77,6 +77,7 @@
 									   <p>Decorate the floor with carpet. The carpet color can choose the customer as their interest. </p>
 									  <p>Price: $78</p>
 									  <p>Warranty: 1 Year.</p>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/carpet.jpg" class="imag" alt="product"/></div></DIV>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -100,10 +101,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/curtains.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -126,7 +127,8 @@
 									 <p>. Decorate the bed room windows.</p>
 									  <p>Price: $78</p>
 									  <p>Warranty: 1 Year.</p>
-									</div>
+									   <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/curtains.jpg" class="imag" alt="product"/></div>
+									</div></DIV>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -148,10 +150,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/frames.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM80<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -174,7 +176,8 @@
 									  <p>Decorate the bed room wall. </p>
 									  <p>Price: $78</p>
 									  <p>Warranty: 1 Year.</p>
-									</div>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/frames.jpg" class="imag" alt="product"/></div>
+									</div></DIV>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -196,10 +199,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/lamp.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM60<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 					         <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -222,7 +225,8 @@
 									 <p>Decorate the bed room light. </p>
 									  <p>Price: $78</p>
 									  <p>Warranty: 1 Year.</p>
-									</div>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/lamp.jpg" class="imag" alt="product"/></div>
+									</div></DIV>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -244,11 +248,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/mirror.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button>
-</div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -270,7 +273,8 @@
 									<p>Decorate the bed room with lighting, kingside bed, mattress and needed things.  </p>
 									  <p>Price: $78</p>
 									  <p>Warranty: 1 Year.</p>
-									</div>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/mirror.jpg" class="imag" alt="product"/></div>
+									</div></DIV>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -292,10 +296,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/table.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">	 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM110<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -318,7 +322,8 @@
 								<p>Decorate the dining room with dining table and sofa set</p>
 									  <p>Price: $178</p>
 									  <p>Warranty: 1 Year.</p>
-									</div>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/table.jpg" class="imag" alt="product"/></div>
+									</div></DIV>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -340,10 +345,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/room.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text">	 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM80<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -366,7 +371,8 @@
 									<p>.Decorate the droning room with sofa tv and extra needed thing. </p>
 									  <p>Price: $78</p>
 									  <p>Warranty: 1 Year.</p>
-									</div>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/room.jpg" class="imag" alt="product"/></div>
+									</div></div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>
@@ -388,10 +394,10 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/livingroom.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></div></a>
+							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM90<i></i></span></a>
+						     <a href="#" class="item"><span class="price">$52<i></i></span></a>
 						    </div>
 						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i>Add to wishlist</a>
@@ -414,6 +420,7 @@
 									<p>Decorate the droning room with sofa tv and extra needed thing.  </p>
 									  <p>Price: $78</p>
 									  <p>Warranty: 1 Year.</p>
+									  <div class="zoomin frame"> <div class="imag"><a href="#"><img src="image/livingroom.jpg" class="imag" alt="product"/></div></div>
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
