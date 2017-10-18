@@ -119,7 +119,7 @@
 					 <img src="image/bluedress2.jpg" alt=""/>
 					 <h2>RM126</h2>
 					 <p>Blue Dress</p>
-					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
+					 <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
 					 </div>
                     </div>
                    </div>
@@ -131,7 +131,7 @@
 					 <img src="image/reddress2.jpg" alt=""/>
 					 <h2>RM100</h2>
 					 <p>Red Dress</p>
-					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
+					 <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
 					 </div>
                     </div>
                    </div> 
@@ -143,7 +143,7 @@
 					 <img src="image/casual2.jpg" alt=""/>
 					 <h2>RM120</h2>
 					 <p>Casual</p>
-					 <a href="#" class="add-toCart"><i class="shopping-cart"></i>Add to cart</a>
+					 <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
 					 </div>
                     </div>
                    </div> 
