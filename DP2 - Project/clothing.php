@@ -26,7 +26,7 @@
 						 <div class="products">
 						  <a href="#"><img src="image/bluedress.jpg" class="img-responsive" alt="product"/></a>
 						    <div class="middle">
-							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
+							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></div></a>
 							</div>
 							<div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM120<i></i></span></a>
@@ -51,8 +51,7 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/bluedress.jpg" class="imag" alt="product"/></div>
-									</div>
+									  
 									 
 									    <fieldset class="rating" >
 										
@@ -88,37 +87,7 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments1.php" method="post" class="form-inline">
-                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
-                                            <input type="submit" name="md1" value="Post">
-                                        </form>
-                                          
-                                          <?php
-                                          
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =1");
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
-                                              
-                                              echo "<p>$user: $userComment</p>";
-                                          }
-                                          
-                                          ?>
-                                          
+                                        
 									  
 									</div>
 									<div class="modal-footer">
@@ -143,7 +112,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/reddress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></a>
+							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM110<i></i></span></a>
@@ -166,8 +135,7 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/reddress.jpg" class="imag" alt="product"/></div>
-									</div>
+									  
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star2" name="rating2" value="5"/>
@@ -202,36 +170,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments2.php" method="post" class="form-inline">
-                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg2"></textarea></label><br/>
                                             <input type="submit" name="md2" value="Post">
                                         </form>
-                                          
-                                          <?php
-                                          
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =2");
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
-                                              
-                                              echo "<p>$user: $userComment</p>";
-                                          }
-                                          
-                                          ?>
 									 
 									</div>
 									<div class="modal-footer">
@@ -254,7 +196,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/pinkdress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></a>
+							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
@@ -278,8 +220,7 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/pinkdress.jpg" class="imag" alt="product"/></div>
-									</div>
+									  
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star3" name="rating3" value="5"/>
@@ -314,38 +255,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments3.php" method="post" class="form-inline">
-                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg3"></textarea></label><br/>
                                             <input type="submit" name="md3" value="Post">
                                         </form>
-                                          
-                                          <?php
-                                          
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =3");
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
-                                              
-                                              echo "<p>$user: $userComment</p>";
-                                          }
-                                          
-                                          ?>
-                                          
-                                          
 									 
 									</div>
 									<div class="modal-footer">
@@ -367,7 +280,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/purpledress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></a>
+							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM160<i></i></span></a>
@@ -390,12 +303,11 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/purpledress.jpg" class="imag" alt="product"/></div>
-									</div>
+									  
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star4" name="rating4" value="5"/>
-											<label class="full" for="5star" title="Excellent"></label>
+											<label class="full" for="5star4" title="Excellent"></label>
 											
 											<input type="radio" id="4halfstar4" name="rating4" value="4.5"/>
 											<label class="half" for="4halfstar4" title="Good"></label>
@@ -426,36 +338,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments4.php" method="post" class="form-inline">
-                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg4"></textarea></label><br/>
                                             <input type="submit" name="md4" value="Post">
                                         </form>
-                                          
-                                          <?php
-                                          
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =4");
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
-                                              
-                                              echo "<p>$user: $userComment</p>";
-                                          }
-                                          
-                                          ?>
 									 
 									</div>
 									<div class="modal-footer">
@@ -480,7 +366,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/whiteshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></a>
+							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
@@ -505,8 +391,7 @@
 									<div class="modal-body">
 									   <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/whiteshirt.jpg" class="imag" alt="product"/></div>
-									</div>
+									  
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star5" name="rating5" value="5"/>
@@ -541,36 +426,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments5.php" method="post" class="form-inline">
-                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg5"></textarea></label><br/>
                                             <input type="submit" name="md5" value="Post">
                                         </form>
-                                          
-                                          <?php
-                                          
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =5");
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
-                                              
-                                              echo "<p>$user: $userComment</p>";
-                                          }
-                                          
-                                          ?>
 									 
 									</div>
 									<div class="modal-footer">
@@ -595,7 +454,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/blackshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></a>
+							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM200<i></i></span></a>
@@ -620,8 +479,7 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blackshirt.jpg" class="imag" alt="product"/></div>
-									</div>
+									  
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star6" name="rating6" value="5"/>
@@ -656,36 +514,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments6.php" method="post" class="form-inline">
-                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg6"></textarea></label><br/>
                                             <input type="submit" name="md6" value="Post">
                                         </form>
-                                          
-                                          <?php
-                                          
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =6");
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
-                                              
-                                              echo "<p>$user: $userComment</p>";
-                                          }
-                                          
-                                          ?>
 									 
 									</div>
 									<div class="modal-footer">
@@ -711,7 +543,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/blueshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></a>
+							  <a href="#"><div class="text"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
@@ -736,8 +568,7 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blueshirt.jpg" class="imag" alt="product"/></div>
-									</div>
+									  
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star7" name="rating7" value="5"/>
@@ -772,36 +603,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments7.php" method="post" name="mod7" class="form-inline">
-                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg7"></textarea></label><br/>
                                             <input type="submit" name="md7" value="Post">
                                         </form>
-                                          
-                                          <?php
-                                          
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =7");
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
-                                              
-                                              echo "<p>$user: $userComment</p>";
-                                          }
-                                          
-                                          ?>
 									 
 									</div>
 									<div class="modal-footer">
@@ -826,7 +631,7 @@
 						 <div class="products">
 						  <a href="#" ><img src="image/casual.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
-							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></a>
+							  <a href="#"><div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></div></a>
 							</div>
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM120<i></i></span></a>
@@ -851,8 +656,7 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/casual.jpg" class="imag" alt="product"/></div>
-									</div>
+									  
 									  <fieldset class="rating" >
 										
 										    <input type="radio" id="5star8" name="rating8" value="5"/>
@@ -887,36 +691,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments8.php" method="post" class="form-inline">
-                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
+                                        <form method="post" class="form-inline">
+                                            <label>Comment: <br/><textarea cols="45" rows="3" name="msg8"></textarea></label><br/>
                                             <input type="submit" name="md8" value="Post">
                                         </form>
-                                          
-                                          <?php
-                                          
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =8");
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
-                                              
-                                              echo "<p>$user: $userComment</p>";
-                                          }
-                                          
-                                          ?>
 									 
 									</div>
 									<div class="modal-footer">
