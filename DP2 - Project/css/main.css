@@ -138,10 +138,13 @@ h2{
 
 /*featured products*/
 .productinfo{
-	position:center;
+	position:relative;
 	text-align:center;
 	margin-left:10px;
+	box-shadow: 0px 0px 15px 0px #D6D6D6;
+    padding-bottom: 20px;
 }
+
 
 .modal-body{
 	padding:40px;
