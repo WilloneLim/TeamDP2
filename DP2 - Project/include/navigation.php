@@ -48,7 +48,9 @@
                 }
                 
                 ?>
-                </li>    
+                </li>  
+				   <li><a href="Pro_regis.php">Product Registration</a></li>
+				<li>
             </ul>
         </div>
     </nav>
