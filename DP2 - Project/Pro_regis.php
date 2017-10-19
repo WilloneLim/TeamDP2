@@ -17,38 +17,58 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     </head>
-    <body>
+  <body id="signupbd">
         
-        <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.php">Deallo House Craft</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Clothing and Accesories</a></li>
-                        <li><a href="#">Jewelry</a></li>
-                        <li><a href="#">Craft Supplies</a></li>
-                        <li><a href="#">Room Decor</a></li>
-                        <li><a href="#">Soft Toys</a></li>
-                        <li><a href="#">Vintage arts</a></li>
-                        <li><a href="#">Wedding Accesories</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Forums</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="sign_up.php"><span class="glyphicon glyphicon-user"></span> Sign UP</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
-				<li><a href="Pro_regis.php"><span class="glyphicon glyphicon-log-in"></span> Product registration </a></li>
-            </ul>
-        </div>
-    </nav>
+        <?php include("include/navigation.php"); ?>
+		
+		
+		        <?php 
+        $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
         
-        <div class="container" id="form-container">
+        if(mysqli_connect_errno()){
+            echo 'Database connection failed with the following errors: ' . mysqli_connect_error();
+            die();
+        }
+        
+        if(!mysqli_select_db($conn, 'deallo'))
+        {
+            die("Uh oh, couldn't select database --> deallo" . $conn->connect_error . '>');
+        }
+		
+		if(isset($_POST['submit']))
+        {
+            
+        $productName = $_POST["productName"];
+        $proDetails = $_POST["proDetails"];
+        $typeofproduct = $_POST["typeofproduct"];
+		$productPrice = $_POST["productPrice"];
+        
+        $sql = "INSERT INTO prodregister (register_name, register_details, register_categories,registrer_price) VALUES ('".$productName."' ,'".$proDetails."' ,'".$typeofproduct."','".$productPrice."')";
+          
+        
+        if(!mysqli_query($conn, $sql))
+        {
+            echo "Not Inserted";
+        }
+        else
+        {
+            echo "Inserted";
+        }
+            
+        }
+       
+        
+        ?>
+		
+		
+		
+		
+		
+    
+
+
+
+	   <div class="container" id="form-container">
             
             <div class="row centered-form">
                 <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
@@ -71,12 +91,12 @@
                                 
                                 <div class="form-group">
                                    <label for="usr">Product Details:</label>
-								   <textarea class="form-control" rows="5" id="comment"></textarea>
+								   <textarea class="form-control" name="proDetails" rows="5" id="comment"></textarea>
                                 </div>
                                 
 								<div class="form-group">
 								  <label for="p_type">Product Type:</label>
-								    <select class="selectpicker">
+								    <select name="typeofproduct" class="selectpicker">
 									  <option>Clothing and Accesories</option>
 									  <option>Craft Supplies</option>
 									  <option>Room Decor</option>
@@ -95,7 +115,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="submit" value="Submit" class="btn btn-info btn-block"> 
+                                <input type="submit" name="submit"  value="Submit" class="btn btn-info btn-block"> 
                                 
                             </form>
                         </div>
