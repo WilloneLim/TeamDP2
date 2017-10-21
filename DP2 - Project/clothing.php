@@ -9,7 +9,9 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
-	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script src="index_files/ca-pub-2074772727795809.js" type="text/javascript" async=""></script><script src="index_files/analytics.js" async=""></script>
 </head>
 <body>
 
@@ -53,41 +55,38 @@
 									  <p>Price: $52 </p>
 									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/bluedress.jpg" class="imag" alt="product"/></div>
 									</div>
+									 <script>
+                                        $(document).ready(function () {
+                                           $("#rated .stars").click(function () {
+                           
+                                           $.post('rating.php',{rate:$(this).val()},function(d){
+                                           if(d>0)
+                                           {
+                                            alert('You already rated');
+                                           }else{
+                                            alert('Thanks For Rating');
+                                           }
+                                        });
+                                       $(this).attr("checked");
+                                      });
+                                     });
+                                     </script>
 									 
-									    <fieldset class="rating" >
-										
-										    <input type="radio" id="5star" name="rating" value="5"/>
-											<label class="full" for="5star" title="Excellent"></label>
-											
-											<input type="radio" id="4halfstar" name="rating" value="4.5"/>
-											<label class="half" for="4halfstar" title="Good"></label>
-											
-											<input type="radio" id="4star" name="rating" value="4"/>
-											<label class="full" for="4star" title="Pretty good"></label>
-											
-											<input type="radio" id="3halfstar" name="rating" value="3.5"/>
-											<label class="half" for="3halfstar" title="Nice"></label>
-											
-											<input type="radio" id="3star" name="rating" value="3"/>
-											<label class="full" for="3star" title="Ok"></label>
-											
-											<input type="radio" id="2halfstar" name="rating" value="2.5"/>
-											<label class="half" for="2halfstar" title="Kinda bad"></label>
-											
-											<input type="radio" id="2star" name="rating" value="2"/>
-											<label class="full" for="2star" title="Bad"></label>
-											
-											<input type="radio" id="1halfstar" name="rating" value="1.5"/>
-											<label class="half" for="1halfstar" title="Meh"></label>
-											
-											<input type="radio" id="1star" name="rating" value="1"/>
-											<label class="full" for="1star" title="Umm"></label>
-											
-											<input type="radio" id="halfstar" name="rating" value="0.5"/>
-											<label class="half" for="halfstar" title="Worst"></label>
-											
-										</fieldset>
-                                        
+									 
+								<fieldset id='rated' class="rating">
+                                    <input class="stars" type="radio" id="star5" name="rating" value="5" />
+                                    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                    <input class="stars" type="radio" id="star4" name="rating" value="4" />
+                                    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                    <input class="stars" type="radio" id="star3" name="rating" value="3" />
+                                    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                    <input class="stars" type="radio" id="star2" name="rating" value="2" />
+                                    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                    <input class="stars" type="radio" id="star1" name="rating" value="1" />
+                                    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+
+                                </fieldset>
+                                        <br><br><br>
                                         <form action="modComments/post_comments1.php" method="post" class="form-inline">
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md1" value="Post">
@@ -108,13 +107,13 @@
                                                die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
                                           }
                                           
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =1");
-                                          while($row = mysqli_fetch_assoc($find_comments))
+                                          $rating = mysqli_query($conn, "SELECT * FROM rating WHERE prod_id =1");
+                                          while($row = mysqli_fetch_assoc($rating))
                                           {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
+                                              $user = $row['rate'];
+                                             
                                               
-                                              echo "<p>$user: $userComment</p>";
+                                              echo "<p>$rate: $rate</p>";
                                           }
                                           
                                           ?>
