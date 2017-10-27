@@ -22,6 +22,19 @@
         <div class="container-fluid">
 			<div class="Clothing-Accesories"><!--features_items-->
 			   <h2 class="title text-center">Clothing and Accessories</h2>
+			   
+			   <div class="container">
+			   <h2>Filter by</h2>
+			<div class="dropdown-click">
+			  <div class="dropdown-content light-grey" id="myDIV">
+              <input class="input" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a class="button" href="#">Price</a>
+              <a class="button" href="#">Discounts</a>
+              <a class="button" href="#">Size</a>
+              </div>
+             </div>
+            </div>
+			
 				<div class="col-sm-3">
 					<div class="product-image-wrapper">
 						<div class="single-products">
