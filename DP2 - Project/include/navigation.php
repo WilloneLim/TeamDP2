@@ -19,8 +19,9 @@
                 </li>
                 <li><a href="#">Forums</a></li>
             </ul>
+            
             <ul class="nav navbar-nav navbar-right">
-                <li>
+                <li class="dropdown">
                 <?php 
                 
                 if(!isset($_SESSION['login_user']))
@@ -29,7 +30,10 @@
                 }
                 else
                 {
-                    echo '<a href="#"><span class="glyphicon glyphicon-user"></span>' .$_SESSION["login_user"]. '</a>';
+                    echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>' .$_SESSION["login_user"]. '<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+                    </ul>';
                 }
                 
                 ?>
@@ -48,9 +52,39 @@
                 }
                 
                 ?>
-                </li>  
-				   <li><a href="Pro_regis.php">Product Registration</a></li>
-				<li>
+                </li>
+                
+                <li>
+                    <?php 
+                    
+                    if(!isset($_SESSION['login_user']))
+                    {
+                        
+                    }
+                    else
+                    {
+                        echo '<a href="#">Sell</a>';
+                    }
+                    
+                    ?>
+                       
+                </li>
+				   
+                <li>
+                    <?php 
+                    
+                    if(!isset($_SESSION['login_user']))
+                    {
+                        
+                    }
+                    else
+                    {
+                        echo '<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
+                    }
+                    
+                    ?>
+                       
+                </li>
             </ul>
         </div>
     </nav>

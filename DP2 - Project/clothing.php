@@ -9,7 +9,7 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
 
         <script src="index_files/ca-pub-2074772727795809.js" type="text/javascript" async=""></script><script src="index_files/analytics.js" async=""></script>
 </head>
@@ -66,7 +66,7 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/bluedress.jpg" class="imag" alt="product"/></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/bluedress.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									 <script>
                                         $(document).ready(function () {
@@ -107,18 +107,7 @@
                                           
                                           <?php
                                           
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
+                                          include ("include/conn.php"); 
                                           
                                           $rating = mysqli_query($conn, "SELECT * FROM rating WHERE prod_id =1");
                                           while($row = mysqli_fetch_assoc($rating))
@@ -178,7 +167,7 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/reddress.jpg" class="imag" alt="product"/></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/reddress.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
 										
@@ -216,23 +205,12 @@
                                         
                                         <form action="modComments/post_comments2.php" method="post" class="form-inline">
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
-                                            <input type="submit" name="md2" value="Post">
+                                            <input type="submit" name="md2" value="Post" />
                                         </form>
                                           
                                           <?php
                                           
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
+                                          include ("include/conn.php"); 
                                           
                                           $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =2");
                                           while($row = mysqli_fetch_assoc($find_comments))
@@ -290,7 +268,7 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/pinkdress.jpg" class="imag" alt="product"/></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/pinkdress.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
 										
@@ -333,18 +311,7 @@
                                           
                                           <?php
                                           
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
+                                          include ("include/conn.php"); 
                                           
                                           $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =3");
                                           while($row = mysqli_fetch_assoc($find_comments))
@@ -402,7 +369,7 @@
 									<div class="modal-body">
 									  <p>Ladies colorful party dress </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/purpledress.jpg" class="imag" alt="product"/></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/purpledress.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
 										
@@ -445,18 +412,7 @@
                                           
                                           <?php
                                           
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
+                                          include ("include/conn.php"); 
                                           
                                           $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =4");
                                           while($row = mysqli_fetch_assoc($find_comments))
@@ -517,7 +473,7 @@
 									<div class="modal-body">
 									   <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/whiteshirt.jpg" class="imag" alt="product"/></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/whiteshirt.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
 										
@@ -560,18 +516,7 @@
                                           
                                           <?php
                                           
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
+                                          include ("include/conn.php"); 
                                           
                                           $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =5");
                                           while($row = mysqli_fetch_assoc($find_comments))
@@ -632,7 +577,7 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blackshirt.jpg" class="imag" alt="product"/></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blackshirt.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
 										
@@ -675,18 +620,7 @@
                                           
                                           <?php
                                           
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
+                                          include ("include/conn.php"); 
                                           
                                           $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =6");
                                           while($row = mysqli_fetch_assoc($find_comments))
@@ -748,7 +682,7 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blueshirt.jpg" class="imag" alt="product"/></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blueshirt.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
 										
@@ -791,18 +725,7 @@
                                           
                                           <?php
                                           
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
+                                          include ("include/conn.php"); 
                                           
                                           $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =7");
                                           while($row = mysqli_fetch_assoc($find_comments))
@@ -863,7 +786,7 @@
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
 									  <p>Price: $52 </p>
-									  <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/casual.jpg" class="imag" alt="product"/></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/casual.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
 										
@@ -906,18 +829,7 @@
                                           
                                           <?php
                                           
-                                          $conn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-                                          if(mysqli_connect_errno())
-                                          {
-                                              echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-                                              die();
-                                          }
-
-                                          if(!mysqli_select_db($conn, 'deallo'))
-                                          {
-                                               die("Uh oh couldnt select database --> deallo" .$conn->connect_error. ">");
-                                          }
+                                          include ("include/conn.php"); 
                                           
                                           $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =8");
                                           while($row = mysqli_fetch_assoc($find_comments))
