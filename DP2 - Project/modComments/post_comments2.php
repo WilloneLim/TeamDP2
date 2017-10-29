@@ -1,33 +1,33 @@
 <?php
 
-session_start();
 
-$commentConn = mysqli_connect('127.0.0.1', 'root', '', 'deallo');
-
-if(mysqli_connect_errno())
-{
-    echo "Database connection has failed with the following errors: ".mysqli_connect_error();
-    die();
-}
-
-if(!mysqli_select_db($commentConn, 'deallo'))
-{
-    die("Uh oh couldnt select database --> deallo" .$commentConn->connect_error. ">");
-}
+include ("include/conn.php");
 
 if(isset($_SESSION['login_user'])){
     $name = $_SESSION['login_user'];
+    
+    $modal_comment = $_POST['msg'];
+    $productID = 2;
+
+    $commsql = "INSERT INTO productcomments (user, prod_comment, prod_id) VALUES ('".$name."' ,'".$modal_comment."' ,'".$productID."')";
+
+    mysqli_query($conn, $commsql);
+    
+    $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =2");
+    while($row = mysqli_fetch_assoc($find_comments))
+    {
+        $user = $row['user'];
+        $userComment = $row['prod_comment'];
+                                              
+        echo "<p>$user: $userComment</p>";
+    }
+
+    
 }else{
-    $name = "Anonymous";
+    
 }
 
-$modal_comment = $_POST['msg'];
-$productID = 2;
 
-$commsql = "INSERT INTO productcomments (user, prod_comment, prod_id) VALUES ('".$name."' ,'".$modal_comment."' ,'".$productID."')";
-
-mysqli_query($commentConn, $commsql);
-header("location: ../clothing.php");
 
 
 ?>
