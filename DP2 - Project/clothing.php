@@ -9,9 +9,7 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
-	
-
-        <script src="index_files/ca-pub-2074772727795809.js" type="text/javascript" async=""></script><script src="index_files/analytics.js" async=""></script>
+	<script src="index_files/ca-pub-2074772727795809.js" type="text/javascript" async=""></script><script src="index_files/analytics.js" async=""></script>
 </head>
 <body>
 
@@ -26,6 +24,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
+                        <form method="post" class="form-inline">
 						  <a href="#"><img src="image/bluedress.jpg" class="img-responsive" alt="product"/></a>
 						    <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
@@ -33,8 +32,18 @@
 							<div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM120<i></i></span></a>
 						    </div>
-						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i> Add to wishlist</a>
+						     <input type="submit" name="cart" class="button" value="Add to cart">
+							 
+				            <?php
+                            
+                            if(isset($_POST['cart']))
+                            {
+                                include ("insertCart/cart.php");
+                            }
+                            
+                            
+                            ?>
+							 
 							 
 							 
 							  <!-- create the code fot Modal  -->
@@ -51,8 +60,8 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Ladies colorful party dress </p>
-									  <p>Price: $52 </p>
+									  <p>Ladies blue party dress </p>
+									  <p>Price: RM120 </p>
                                         <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/bluedress.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									 <script>
@@ -87,10 +96,10 @@
 
                                 </fieldset>
                                         <br><br><br>
-                                        <form action="modComments/post_comments1.php" method="post" class="form-inline">
+                                        
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md1" value="Post">
-                                        </form>
+                                     
                                           
                                           <?php
                                           
@@ -118,7 +127,7 @@
 							  </div>
 							  <!-- End ofModal code -->
 							 
-							 
+                             </form>
 					     </div>
 				        </div>
 				    </div>
@@ -129,6 +138,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
+                        <form  method="post" class="form-inline">
 						  <a href="#" ><img src="image/reddress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></a>
@@ -136,9 +146,17 @@
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM110<i></i></span></a>
 						    </div>
-						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i> Add to wishlist</a>
+						     <input type="submit" name="cart2" class="button" value="Add to cart">
 							 
+				            <?php
+                            
+                            if(isset($_POST['cart2']))
+                            {
+                                include ("insertCart/cart2.php");
+                            }
+                            
+                            
+                            ?>
 				
 
 							  <!-- Modal -->
@@ -190,24 +208,21 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments2.php" method="post" class="form-inline">
+                                        
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md2" value="Post" />
-                                        </form>
+                                      
                                           
                                           <?php
-                                          
-                                          include ("include/conn.php"); 
-                                          
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =2");
-                                          while($row = mysqli_fetch_assoc($find_comments))
+                                        
+                                    
+                                        
+                                          if(isset($_POST['md2']))
                                           {
-                                              $user = $row['user'];
-                                              $userComment = $row['prod_comment'];
                                               
-                                              echo "<p>$user: $userComment</p>";
+                                              include ("modComments/post_comments2.php");
                                           }
-                                          
+                                        
                                           ?>
 									 
 									</div>
@@ -219,7 +234,7 @@
 								</div>
 							  </div>
 							 
-							 
+                             </form>
 					     </div>
 				        </div>
 				    </div>
@@ -229,6 +244,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
+                             <form method="post" class="form-inline">
 						  <a href="#" ><img src="image/pinkdress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></a>
@@ -236,10 +252,17 @@
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
 						    </div>
-						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i> Add to wishlist</a>
+						     <input type="submit" name="cart3" class="button" value="Add to cart">
 							 
-							 
+				            <?php
+                            
+                            if(isset($_POST['cart3']))
+                            {
+                                include ("insertCart/cart3.php");
+                            }
+                            
+                            
+                            ?>
 							
 
 							  <!-- Modal -->
@@ -253,8 +276,8 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Ladies colorful party dress </p>
-									  <p>Price: $52 </p>
+									  <p>Ladies pink party dress </p>
+									  <p>Price: RM100 </p>
                                         <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/pinkdress.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
@@ -291,10 +314,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments3.php" method="post" class="form-inline">
+                                        
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md3" value="Post">
-                                        </form>
+                                      
                                           
                                           <?php
                                           
@@ -322,6 +345,7 @@
 								</div>
 							  </div>
 							 
+                             </form>
 					     </div>
 				        </div>
 				    </div>
@@ -331,6 +355,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
+                             <form method="post" class="form-inline">
 						  <a href="#" ><img src="image/purpledress.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></a>
@@ -338,8 +363,17 @@
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM160<i></i></span></a>
 						    </div>
-						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-					         <a href="#" class="wishlist"><i class="fa fa-plus-square"></i> Add to wishlist</a>
+						     <input type="submit" name="cart4" class="button" value="Add to cart">
+							 
+				            <?php
+                            
+                            if(isset($_POST['cart4']))
+                            {
+                                include ("insertCart/cart4.php");
+                            }
+                            
+                            
+                            ?>
 							 
 							
 
@@ -354,8 +388,8 @@
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p>Ladies colorful party dress </p>
-									  <p>Price: $52 </p>
+									  <p>Ladies purple party dress </p>
+									  <p>Price: RM160 </p>
                                         <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/purpledress.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
@@ -392,10 +426,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments4.php" method="post" class="form-inline">
+                                       
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md4" value="Post">
-                                        </form>
+                                       
                                           
                                           <?php
                                           
@@ -423,7 +457,7 @@
 							 
 							 
 							 
-							 
+                             </form> 
 						 </div>
 				        </div>
 				    </div>
@@ -433,6 +467,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
+                             <form method="post" class="form-inline">
 						  <a href="#" ><img src="image/whiteshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></a>
@@ -440,12 +475,19 @@
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
 						    </div>
-						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i> Add to wishlist</a>
+						     <input type="submit" name="cart5" class="button" value="Add to cart">
 							 
+				            <?php
+                            
+                            if(isset($_POST['cart5']))
+                            {
+                                include ("insertCart/cart5.php");
+                            }
+                            
+                            
+                            ?>
 							 
-							 							  <!-- create the code fot Modal  -->
-					
+
 
 							  <!-- Modal -->
 							  <div class="modal fade" id="myModal5" role="dialog">
@@ -459,7 +501,7 @@
 									</div>
 									<div class="modal-body">
 									   <p>Men formal shirt </p>
-									  <p>Price: $52 </p>
+									  <p>Price: RM100 </p>
                                         <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/whiteshirt.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
@@ -496,10 +538,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments5.php" method="post" class="form-inline">
+                                        
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md5" value="Post">
-                                        </form>
+                                        
                                           
                                           <?php
                                           
@@ -527,7 +569,7 @@
 							  <!-- End ofModal code -->
 							 
 							 
-							 
+                             </form>
 					     </div>
 				        </div>
 				    </div>
@@ -537,6 +579,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
+                             <form method="post" class="form-inline">
 						  <a href="#" ><img src="image/blackshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></a>
@@ -544,9 +587,17 @@
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM200<i></i></span></a>
 						    </div>
-						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i> Add to wishlist</a>
+						    <input type="submit" name="cart6" class="button" value="Add to cart">
 							 
+				            <?php
+                            
+                            if(isset($_POST['cart6']))
+                            {
+                                include ("insertCart/cart6.php");
+                            }
+                            
+                            
+                            ?>
 							 
 							  <!-- create the code fot Modal  -->
 							
@@ -563,7 +614,7 @@
 									</div>
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
-									  <p>Price: $52 </p>
+									  <p>Price: RM200 </p>
                                         <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blackshirt.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
@@ -600,10 +651,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments6.php" method="post" class="form-inline">
+                                       
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md6" value="Post">
-                                        </form>
+                                    
                                           
                                           <?php
                                           
@@ -632,7 +683,7 @@
 							 
 							 
 							 
-							 
+                             </form>
 					     </div>
 				        </div>
 				    </div>
@@ -642,6 +693,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
+                             <form method="post" class="form-inline">
 						  <a href="#" ><img src="image/blueshirt.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></a>
@@ -649,9 +701,17 @@
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
 						    </div>
-						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i> Add to wishlist</a>
+						     <input type="submit" name="cart7" class="button" value="Add to cart">
 							 
+				            <?php
+                            
+                            if(isset($_POST['cart7']))
+                            {
+                                include ("insertCart/cart7.php");
+                            }
+                            
+                            
+                            ?>
 							 
 							  <!-- create the code fot Modal  -->
 							
@@ -668,7 +728,7 @@
 									</div>
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
-									  <p>Price: $52 </p>
+									  <p>Price: RM100 </p>
                                         <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/blueshirt.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
@@ -705,10 +765,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments7.php" method="post" name="mod7" class="form-inline">
+                                        
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md7" value="Post">
-                                        </form>
+                                      
                                           
                                           <?php
                                           
@@ -736,7 +796,7 @@
 							  <!-- End ofModal code -->
 							 
 							 
-							 
+                             </form> 
 					     </div>
 				        </div>
 				    </div>
@@ -746,6 +806,7 @@
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
+                             <form method="post" class="form-inline">
 						  <a href="#" ><img src="image/casual.jpg" class="img-responsive" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></a>
@@ -753,9 +814,17 @@
 						    <div class="grid_1">
 						     <a href="#" class="item"><span class="price">RM120<i></i></span></a>
 						    </div>
-						     <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-							 <a href="#" class="wishlist"><i class="fa fa-plus-square"></i> Add to wishlist</a>
+						     <input type="submit" name="cart8" class="button" value="Add to cart">
 							 
+				            <?php
+                            
+                            if(isset($_POST['cart8']))
+                            {
+                                include ("insertCart/cart8.php");
+                            }
+                            
+                            
+                            ?>
 							 
 							 <!-- create the code fot Modal  -->
 							 
@@ -772,7 +841,7 @@
 									</div>
 									<div class="modal-body">
 									 <p>Men formal shirt </p>
-									  <p>Price: $52 </p>
+									  <p>Price: RM120 </p>
                                         <div class="zoomin frame"><div class="imag"><a href="#"><img src="image/casual.jpg" class="imag" alt="product"/></a></div>
 									</div>
 									  <fieldset class="rating" >
@@ -809,10 +878,10 @@
 											
 										</fieldset>
                                         
-                                        <form action="modComments/post_comments8.php" method="post" class="form-inline">
+                                        
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
                                             <input type="submit" name="md8" value="Post">
-                                        </form>
+                                        
                                           
                                           <?php
                                           
@@ -841,7 +910,7 @@
 							 
 							 
 							 
-							 
+                             </form> 
 					     </div>
 				        </div>
 				    </div>
