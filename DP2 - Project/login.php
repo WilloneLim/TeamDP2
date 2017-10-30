@@ -17,7 +17,7 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     </head>
-    <body id="loginBody">
+    <body>
         
         <?php
         
