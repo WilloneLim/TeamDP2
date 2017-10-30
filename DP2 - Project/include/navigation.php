@@ -4,7 +4,7 @@
                 <a class="navbar-brand" href="index.php">Deallo House Craft</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -32,7 +32,7 @@
                 {
                     echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>' .$_SESSION["login_user"]. '<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+                        <li><a href="carts.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
                     </ul>';
                 }
                 
