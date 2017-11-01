@@ -10,6 +10,11 @@
     <link href="css/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
 	<script src="index_files/ca-pub-2074772727795809.js" type="text/javascript" async=""></script><script src="index_files/analytics.js" async=""></script>
+	
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/price-range.css" rel="stylesheet">
+	 <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+
 </head>
 <body>
 
@@ -17,36 +22,65 @@
     <?php include ("include/navigation.php"); ?>
 	
 	
-        <div class="container-fluid">
+        <div class="container-fluid" style="height:100%;">
 			<div class="Clothing-Accesories"><!--features_items-->
 			   <h2 class="title text-center">Clothing and Accessories</h2>
 			   
-			   <div class="container">
-			   <h2>Filter by</h2>
-			<div class="dropdown-click">
-			  <div class="dropdown-content light-grey" id="myDIV">
-              <input class="input" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-              <a class="button" href="#">Price</a>
-              <a class="button" href="#">Discounts</a>
-              <a class="button" href="#">Size</a>
-              </div>
-             </div>
-            </div>
-			
+			    <div class="col-md-2">
+                      <div class="left-sidebar">
+						<h2>Filters by</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Discount</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Rating</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Brands</a></h4>
+								</div>
+							</div>
+						</div><!--/category-products-->
+					
+						
+						
+						<div class="price-range"><!--price-range-->
+							<h2>Price Range</h2>
+							<div class="well text-center">
+								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+								 <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
+							</div>
+						</div><!--/price-range-->
+						
+						<div class="shipping text-center"><!--shipping-->
+							<img src="image/shipping1.jpg" alt="" />
+						</div><!--/shipping-->
+					
+					</div>
+				</div>
+			   
+	
+	         <div class="col-md-10">
 				<div class="col-sm-3">
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
                         <form method="post" class="form-inline">
-						  <a href="#"><img src="image/bluedress.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#"><img src="image/bluedress.jpg" class="img-responsive" id="images" alt="product"/></a>
 						    <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
 							</div>
 							<div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM120<i></i></span></a>
+						     <h2 id="price">RM 120</h2>
 						    </div>
 						     <input type="submit" name="cart" class="button" value="Add to cart">
-							 
 				            <?php
                             
                             if(isset($_POST['cart']))
@@ -59,6 +93,8 @@
 							 
 							 
 							 
+							  <!-- create the code fot Modal  -->
+							
 
 							  <!-- Modal -->
 							  <div class="modal fade" id="myModal1" role="dialog">
@@ -135,7 +171,7 @@
 									  
 									</div>
 									<div class="modal-footer">
-									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									 <a href="#" class="button"><i class="fa fa-shopping-cart"></i> Add to cart</a>
 									</div>
 								  </div>
 								  
@@ -155,15 +191,14 @@
 						<div class="single-products">
 						 <div class="products">
                         <form  method="post" class="form-inline">
-						  <a href="#" ><img src="image/reddress.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/reddress.jpg" class="img-responsive" id="images" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM110<i></i></span></a>
+						     <h2 id="price">RM 110</h2>
 						    </div>
-						     <input type="submit" name="cart2" class="button" value="Add to cart">
-							 
+						     <input type="submit" name="cart" class="button" value="Add to cart">
 				            <?php
                             
                             if(isset($_POST['cart2']))
@@ -252,7 +287,7 @@
                                           
                                         
                                           ?>
-									 
+										  
 									</div>
 									<div class="modal-footer">
 									  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -273,15 +308,14 @@
 						<div class="single-products">
 						 <div class="products">
                              <form method="post" class="form-inline">
-						  <a href="#" ><img src="image/pinkdress.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/pinkdress.jpg" class="img-responsive" id="images" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
+						     <h2 id="price">RM 100</h2>
 						    </div>
-						     <input type="submit" name="cart3" class="button" value="Add to cart">
-							 
+						     <input type="submit" name="cart" class="button" value="Add to cart">
 				            <?php
                             
                             if(isset($_POST['cart3']))
@@ -384,15 +418,14 @@
 						<div class="single-products">
 						 <div class="products">
                              <form method="post" class="form-inline">
-						  <a href="#" ><img src="image/purpledress.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/purpledress.jpg" class="img-responsive" id="images" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM160<i></i></span></a>
+						     <h2 id="price">RM 160</h2>
 						    </div>
-						     <input type="submit" name="cart4" class="button" value="Add to cart">
-							 
+							<input type="submit" name="cart" class="button" value="Add to cart"> 
 				            <?php
                             
                             if(isset($_POST['cart4']))
@@ -496,15 +529,14 @@
 						<div class="single-products">
 						 <div class="products">
                              <form method="post" class="form-inline">
-						  <a href="#" ><img src="image/whiteshirt.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/whiteshirt.jpg" class="img-responsive" id="images" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
+						     <h2 id="price">RM 100</h2>
 						    </div>
-						     <input type="submit" name="cart5" class="button" value="Add to cart">
-							 
+							<input type="submit" name="cart" class="button" value="Add to cart"> 
 				            <?php
                             
                             if(isset($_POST['cart5']))
@@ -608,15 +640,14 @@
 						<div class="single-products">
 						 <div class="products">
                              <form method="post" class="form-inline">
-						  <a href="#" ><img src="image/blackshirt.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/blackshirt.jpg" class="img-responsive" id="images" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM200<i></i></span></a>
+						     <h2 id="price">RM 200</h2>
 						    </div>
-						    <input type="submit" name="cart6" class="button" value="Add to cart">
-							 
+							<input type="submit" name="cart" class="button" value="Add to cart"> 
 				            <?php
                             
                             if(isset($_POST['cart6']))
@@ -722,15 +753,14 @@
 						<div class="single-products">
 						 <div class="products">
                              <form method="post" class="form-inline">
-						  <a href="#" ><img src="image/blueshirt.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/blueshirt.jpg" class="img-responsive" id="images" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM100<i></i></span></a>
+						     <h2 id="price">RM 100</h2>
 						    </div>
-						     <input type="submit" name="cart7" class="button" value="Add to cart">
-							 
+							<input type="submit" name="cart" class="button" value="Add to cart"> 
 				            <?php
                             
                             if(isset($_POST['cart7']))
@@ -835,16 +865,15 @@
 						<div class="single-products">
 						 <div class="products">
                              <form method="post" class="form-inline">
-						  <a href="#" ><img src="image/casual.jpg" class="img-responsive" alt="product"/></a>
+						  <a href="#" ><img src="image/casual.jpg" class="img-responsive" id="images" alt="product"/></a>
 						  <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">About Product</button></a>
 							</div>
 						    <div class="grid_1">
-						     <a href="#" class="item"><span class="price">RM120<i></i></span></a>
+						     <h2 id="price">RM 120</h2>
 						    </div>
-						     <input type="submit" name="cart8" class="button" value="Add to cart">
-							 
-				            <?php
+							<input type="submit" name="cart" class="button" value="Add to cart">
+							<?php
                             
                             if(isset($_POST['cart8']))
                             {
@@ -941,10 +970,17 @@
 				        </div>
 				    </div>
 				</div>
-				
-				
+			  </div>
 			</div>
 		</div>
+		
+    <a href="#" class="back-to-top" >
+     <i class="fa fa-arrow-up"></i>
+   </a>
+	
+	
+	
+ 
 
     <!-- jQuery – required for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
@@ -953,5 +989,32 @@
     <!-- Basic AngularJS -->
     <script src="js/angular.min.js"></script>
     <script src="js/unit.js"></script>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script> 
+	
+    <script src="js/main.js"></script>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	$('.back-to-top').css({"display": "none"});
+    jQuery(document).ready(function() {
+     var offset = 250;
+    var duration = 300;
+    jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+    jQuery('.back-to-top').fadeIn(duration);
+    } else {
+    jQuery('.back-to-top').fadeOut(duration);
+    }
+ });
+ 
+ jQuery('.back-to-top').click(function(event) {
+   event.preventDefault();
+   jQuery('html, body').animate({scrollTop: 0}, duration);
+   return false;
+ })
+ });
+</script>
     </body>
 </html>    
