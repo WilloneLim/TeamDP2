@@ -59,8 +59,6 @@
 							 
 							 
 							 
-							  <!-- create the code fot Modal  -->
-							
 
 							  <!-- Modal -->
 							  <div class="modal fade" id="myModal1" role="dialog">
@@ -115,18 +113,23 @@
                                      
                                           
                                           <?php
+                                          include ("include/conn.php");
                                           
-                                          include ("include/conn.php"); 
-                                          
-                                          $rating = mysqli_query($conn, "SELECT * FROM rating WHERE prod_id =1");
-                                          while($row = mysqli_fetch_assoc($rating))
+                                          if(isset($_POST['md1']))
                                           {
-                                              $user = $row['rate'];
-                                             
                                               
-                                              echo "<p>$rate: $rate</p>";
+                                              include ("modComments/post_comments1.php");
                                           }
-                                          
+                                        
+                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =1");
+                                          while($row = mysqli_fetch_assoc($find_comments))
+                                          {
+                                               $user = $row['user'];
+                                               $userComment = $row['prod_comment'];
+                                              
+                                               echo "<p>$user: $userComment</p>";
+                                          }
+                                        
                                           ?>
                                           
 									  
@@ -227,14 +230,26 @@
                                       
                                           
                                           <?php
-                                        
-                                    
-                                        
+                                          
+                                          include ("include/conn.php");
+                   
                                           if(isset($_POST['md2']))
                                           {
                                               
                                               include ("modComments/post_comments2.php");
                                           }
+                                           
+                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =2");
+                                          while($row = mysqli_fetch_assoc($find_comments))
+                                          {
+                                                $user = $row['user'];
+                                                $userComment = $row['prod_comment'];
+                                              
+                                                echo "<p>$user: $userComment</p>";
+                                           }
+
+                                        
+                                          
                                         
                                           ?>
 									 

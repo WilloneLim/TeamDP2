@@ -13,15 +13,7 @@ if(isset($_SESSION['login_user'])){
 
     mysqli_query($conn, $commsql);
     
-    $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =2");
-    while($row = mysqli_fetch_assoc($find_comments))
-    {
-        $user = $row['user'];
-        $userComment = $row['prod_comment'];
-                                              
-        echo "<p>$user: $userComment</p>";
-    }
-
+    
     
 }else{
     
