@@ -94,6 +94,8 @@
                         
                     </tbody>
                 </table>
+                
+                <button type="button" class="btn btn-success btn-lg">Checkout</button>
             </div>
         </div>
         

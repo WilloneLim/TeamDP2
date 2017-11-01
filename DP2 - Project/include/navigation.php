@@ -21,7 +21,7 @@
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
+                <li>
                 <?php 
                 
                 if(!isset($_SESSION['login_user']))
@@ -30,10 +30,7 @@
                 }
                 else
                 {
-                    echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>' .$_SESSION["login_user"]. '<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="carts.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
-                    </ul>';
+                    echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>' .$_SESSION["login_user"]. '<span class="caret"></span></a>';
                 }
                 
                 ?>
@@ -63,7 +60,7 @@
                     }
                     else
                     {
-                        echo '<a href="#">Sell</a>';
+                        echo '<a href="Pro_regis.php">Sell On Deallo</a>';
                     }
                     
                     ?>
@@ -79,7 +76,7 @@
                     }
                     else
                     {
-                        echo '<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
+                        echo '<a href="carts.php"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
                     }
                     
                     ?>
