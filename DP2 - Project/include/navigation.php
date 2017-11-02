@@ -35,7 +35,7 @@
                 
                 ?>
                 </li>    
-                  <li><a href="#">login(admin)</a></li>
+                  <li><a href="login(admin).php">login(admin)</a></li>
                 <li>    
                 <?php
                 
