@@ -91,7 +91,7 @@
 									  <option>Craft Supplies</option>
 									  <option>Room Decor</option>
 									  <option>Soft Toys</option>
-									  <option>Vintage arts</option>
+									  <option>Vintage Art</option>
 									  <option>Wedding Accesories</option>
 									 
 								    </select> <br>
