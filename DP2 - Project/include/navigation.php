@@ -50,7 +50,7 @@
                 
                 ?>
                 </li>
-                
+                   <li><a href="Pro_regis.php">Product_registration</a></li>
                 <li>
                     <?php 
                     
