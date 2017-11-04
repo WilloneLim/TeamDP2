@@ -27,13 +27,13 @@
 		
 		if(isset($_POST['submit']))
         {
-            
+         $file = rand(1000,100000)."-".$_FILES['file'];   
         $productName = $_POST["productName"];
         $proDetails = $_POST["proDetails"];
         $typeofproduct = $_POST["typeofproduct"];
 		$productPrice = $_POST["productPrice"];
         
-        $sql = "INSERT INTO prodregister (register_name, register_details, register_categories,registrer_price) VALUES ('".$productName."' ,'".$proDetails."' ,'".$typeofproduct."','".$productPrice."')";
+        $sql = "INSERT INTO prodregister (register_name, register_details, register_categories,registrer_price,file) VALUES ('".$productName."' ,'".$proDetails."' ,'".$typeofproduct."','".$productPrice."','$file')";
           
         
         if(!mysqli_query($conn, $sql))
@@ -102,6 +102,14 @@
                                         <div class="form-group">
                                             <label for="usr">Product Price:</label>
 											<input type="text" name="productPrice" id="Price" class="form-control input-sm" placeholder="Product Proce" required>
+                                        </div>
+                                    </div>
+                                </div>
+								     <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="usr">upload Image:</label>
+											<input type="file" name="file" accept="image/*" required>
                                         </div>
                                     </div>
                                 </div>
