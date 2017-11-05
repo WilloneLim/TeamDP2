@@ -11,8 +11,17 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
 	<script src="index_files/ca-pub-2074772727795809.js" type="text/javascript" async=""></script><script src="index_files/analytics.js" async=""></script>
 	<link href="css/animate.css" rel="stylesheet">
-	<link href="css/price-range.css" rel="stylesheet">
 	 <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+ <style>
+.container{padding: 20px;}
+.filter-panel{width:100%;}
+.filter-panel p{margin-right: 30px;float: left;}
+#productContainer{float: left;width: 100%;}
+</style>
+ <link rel="stylesheet" href="filter/jquery.range.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="filter/jquery.range.js"></script>
+
 
 </head>
 <body>
@@ -53,41 +62,61 @@
 			    <div class="col-md-2">
                       <div class="left-sidebar">
 						<h2>Filters by</h2>
-						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
-							
-							
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Discount</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Rating</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Brands</a></h4>
-								</div>
-							</div>
-						</div><!--/category-products-->
+						
 					
 						
-						
-						<div class="price-range"><!--price-range-->
-							<h2>Price Range</h2>
-							<div class="well text-center">
-								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-								 <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
-							</div>
-						</div><!--/price-range-->
-						
-						<div class="shipping text-center"><!--shipping-->
-							<img src="image/shipping1.jpg" alt="" />
-						</div><!--/shipping-->
-					
-					</div>
+					<div class="container">
+    <div class="filter-panel">
+        <p><input type="hidden" class="price_range" value="0,300" /></p>
+        <input type="button" onclick="filterProducts()" value="FILTER" />
+    </div>
+	<script>
+function filterProducts() {
+    var price_range = $('.price_range').val();
+    $.ajax({
+        type: 'POST',
+        url: 'getProducts.php',
+        data:'price_range='+price_range,
+        beforeSend: function () {
+            $('.container').css("opacity", ".5");
+        },
+        success: function (html) {
+            $('#productContainer').html(html);
+            $('.container').css("opacity", "");
+        }
+    });
+}
+</script>
+    <div id="productContainer">
+        <?php
+        //Include database configuration file
+        include('filter/config.php');
+        
+        //get product rows
+        $query = $con->query("SELECT * FROM product ORDER BY categories DESC");
+        
+        if($query->num_rows > 0){
+                while($row = $query->fetch_assoc()){
+            ?>
+			
+        <?php }
+        }else{
+            echo 'Product(s) not found';
+        } ?>
+    </div>
+</div>
+<script>
+$('.price_range').jRange({
+	from:0,
+	to:300,
+	step:20,
+	format: 'RM %s',
+	width:100,
+	showLabels:true,
+	isRange:true
+});
+</script>
+	</div>
 				</div>
 			   
 	
@@ -215,7 +244,7 @@
     <!-- Basic AngularJS -->
     <script src="js/angular.min.js"></script>
 	<script src="js/jquery.js"></script>
-	<script src="js/price-range.js"></script> 
+	<script src="filter/jquery.range.js"></script>
     <script src="js/main.js"></script>
     <script>
     	$('.back-to-top').css({"display": "none"});
