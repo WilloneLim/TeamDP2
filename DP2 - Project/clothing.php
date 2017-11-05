@@ -10,7 +10,6 @@
     <link href="css/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
 	<script src="index_files/ca-pub-2074772727795809.js" type="text/javascript" async=""></script><script src="index_files/analytics.js" async=""></script>
-	
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/price-range.css" rel="stylesheet">
 	 <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
@@ -35,6 +34,13 @@
         include ("insertCart/cart.php");
         
     }
+    
+    if(isset($_POST['md']))
+    {
+        
+        include ("modComments/post_comments1.php");
+    }
+
     
     
     ?>
@@ -153,25 +159,21 @@
                                         <br><br><br>
                                         
                                             <label>Comment: <br/><textarea cols="45" rows="3" name="msg"></textarea></label><br/>
-                                            <input type="submit" name="<?=$product['id'] ?>" value="Post">
+                                            <input type="submit" name="md" value="Post">
                                      
                                           
                                           <?php
-                                          
-                                          if(isset($_POST[$product['id']]))
-                                          {
-                                              
-                                              include ("modComments/post_comments1.php");
-                                          }
-                                        
-                                          $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =" .$product['id']);
-                                          while($row = mysqli_fetch_assoc($find_comments))
-                                          {
-                                               $user = $row['user'];
-                                               $userComment = $row['prod_comment'];
-                                              
-                                               echo "<p>$user: $userComment</p>";
-                                          }
+                                           
+                                         
+                                           $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =" .$product['id']);
+                                           while($row = mysqli_fetch_assoc($find_comments))
+                                           {
+                                                $user = $row['user'];
+                                                $userComment = $row['prod_comment'];
+                                               
+                                                echo "<p>$user: $userComment</p>";
+                                           }
+    
                                         
                                           ?>
                                           
@@ -215,7 +217,6 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/price-range.js"></script> 
     <script src="js/main.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
     	$('.back-to-top').css({"display": "none"});
         jQuery(document).ready(function() {
