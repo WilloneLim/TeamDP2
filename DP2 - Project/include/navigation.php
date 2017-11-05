@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-default navbar-fixed-top">
+     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.php">Deallo House Craft</a>
@@ -17,7 +17,7 @@
                         <li><a href="wedding.php">Wedding Accesories</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Forums</a></li>
+                
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
@@ -30,12 +30,12 @@
                 }
                 else
                 {
-                    echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>' .$_SESSION["login_user"]. '<span class="caret"></span></a>';
+                    echo '<a href="#"><span class="glyphicon glyphicon-user"></span>' .$_SESSION["login_user"]. '</a>';
                 }
                 
                 ?>
                 </li>    
-                  <li><a href="login(admin).php">login(admin)</a></li>
+                
                 <li>    
                 <?php
                 
@@ -50,7 +50,7 @@
                 
                 ?>
                 </li>
-                   <li><a href="Pro_regis.php">Product_registration</a></li>
+                
                 <li>
                     <?php 
                     
