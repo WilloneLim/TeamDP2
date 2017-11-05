@@ -21,6 +21,11 @@ footer{
     text-align: center;
 }
 
+#checkoutrow
+{
+    margin-top: 70px;
+}
+
 #myCarousel
 {
     height: 100%; 
@@ -44,6 +49,9 @@ footer{
     background-color: deepskyblue;
 }
 
+#sub{
+    background-color: #47d147;
+}
 .signuppg{
     margin-top: 150px;
 }

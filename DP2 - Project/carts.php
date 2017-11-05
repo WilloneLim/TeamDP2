@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home Page</title>
+    <title>Shopping Cart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
@@ -35,6 +35,7 @@
                     <thead>
                         <th>Item</th>
                         <th>Price</th>
+                        <th colspan="3"></th>
                     </thead>
                     <tbody>
                         <?php
@@ -51,8 +52,10 @@
                             $itemName = $cartrow['item_name'];
                             $itemPrice = $cartrow['item_price'];
                             
+                            
                             echo "<tr><td> $itemName </td>";
-                            echo "<td> $itemPrice </td></tr>";
+                            echo "<td> $itemPrice </td>";
+                            echo "<td><a href='delete.php?id=".$cartrow['id']."'>Remove</a></td></tr>";
                         }
         
             
@@ -95,7 +98,8 @@
                     </tbody>
                 </table>
                 
-                <button type="button" class="btn btn-success btn-lg">Checkout</button>
+                <a href="checkout.php" class="btn btn-primary">Checkout</a>
+                
             </div>
         </div>
         
@@ -109,6 +113,5 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Basic AngularJS -->
     <script src="js/angular.min.js"></script>
-    <script src="js/unit.js"></script>
 </body>
 </html>
