@@ -29,7 +29,7 @@
         <div class="col-md-2"></div>
         
         <div class="col-md-8">
-        <form name="checkoutForm" method="post" data-ng-submit="submitForm(checkoutForm.$valid)" id="checkout-form" novalidate>
+        <form name="checkoutForm" method="post"   id="checkout-form" novalidate>
                 <div class="form-group col-md-6" ng-class="{'has-error' : checkoutForm.full_name.$invalid && !checkoutForm.full_name.$pristine } ">
                     <label for="full_name">Full Name:</label>
                     <input class="form-control" id="full_name" name="full_name" type="text" data-ng-model="user.full_name" required>
@@ -66,38 +66,24 @@
                 </div>
             
             
-                <input type="submit" name="payment" class="btn btn-primary" value="Proceed to Payment" data-toggle="modal" data-target="#checkoutModal">
+            <button type="button" class="btn btn-primary" onclick="retrieve()" data-toggle="modal" data-target="#checkoutModal">Proceed</button>
                 
         </form>
+            
             
              <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModal" >
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
+                            <form name="checkmodal" method="post">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <h4 class="modal-title" id="checkoutModalLabel">Checkout Information</h4>
                             </div>
-                            <div class="modal-body">
-                                
-                                <?php 
-    
-                                if(isset($_POST['payment']))
-                                {
-                                    $clientName = $_POST['full_name'];
-                                    $clientAdd1 = $_POST['address'];
-                                    $clientAdd2 = $_POST['address2'];
-                                    $city = $_POST['city'];
-                                    $state = $_POST['state'];
-                                    $zip = $_POST['zip_code'];
-                                    $country = $_POST['country'];
-                                }
-                                
-                                
-                                ?>
-                                
-                                
-                                
+                            <div class="modal-body">    
                                 <h1>Checkout Complete - Thank You</h1>
+                                <p id="billname"></p>
+                                <p id="homeinfo"></p>
+
                                 <br /><hr />
                                 <h3>Billing information</h3>
                                 
@@ -105,7 +91,7 @@
                                    <thead>
                                        <th>Item</th>
                                        <th>Price</th>
-                                       <th colspan="3"></th>
+                                       
                                        
                                    </thead>
                                    <tbody>
@@ -129,12 +115,12 @@
                                            $itemName = $cartrow['item_name'];
                                            $itemPrice = $cartrow['item_price'];
                                            
-                                           echo "<tr><td> RM" .$itemName. "</td>";
-                                           echo "<td> RM" .$itemPrice. "</td></tr>";
+                                           echo "<tr><td>" .$itemName. "</td>";
+                                           echo "<td> RM " .$itemPrice. "</td></tr>";
                                            
                                        }
                                            
-                                           echo "<tr id='sub'><td></td><td>Subtotal: RM".$sum."</tr>";
+                                           echo "<tr id='sub'><td></td><td>Subtotal: RM ".$sum."</tr>";
                            
                    
                                        }
@@ -144,8 +130,9 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Done</button> 
+                                <input type="submit" name="checkdone" class="btn btn-primary" value="Done">
                             </div>
+                                </form>
                         </div>
                     </div>
                     
