@@ -37,3 +37,24 @@ validationApp.controller('mainController', function($scope){
     };
     
 });
+
+function retrieve()
+{
+    var name = document.getElementById("full_name").value;
+    
+    var addr = document.getElementById("address").value;
+    
+    var addr2 = document.getElementById("address2").value;
+    
+    var city = document.getElementById("city").value;
+    
+    var state = document.getElementById("state").value;
+    
+    var zip = document.getElementById("zip_code").value;
+    
+    var country = document.getElementById("country").value;
+    
+    document.getElementById("billname").innerHTML = "<strong>Name: </strong>" + name;
+    
+    document.getElementById("homeinfo").innerHTML = "<strong>Address: </strong>" + addr + " ," + addr2 + " ," + zip + " ," + city + " ," + state + " ," + country; 
+}
