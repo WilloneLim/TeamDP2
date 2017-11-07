@@ -70,7 +70,7 @@ $num_rows = mysqli_num_rows($result);
 if($num_rows > 0) {
     $i=0;
     while($rows=mysqli_fetch_assoc($result)) {
-        $image_url = "image/product-images/";
+        $image_url = "image";
         $image_url .= !is_null($rows['image']) && strlen($rows['image']) > 0 ? $rows['image'] : 'no-image.jpeg';  
         ?>
              <tr>

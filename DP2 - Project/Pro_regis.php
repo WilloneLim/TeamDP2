@@ -28,7 +28,7 @@
 		if(isset($_POST['submit']))
         {
          $fileName = rand(1000,100000)."-".$_FILES["file"]["name"];  
-         move_uploaded_file($_FILES["file"]["tmp_name"], "image/product-images/" . $fileName);  
+         move_uploaded_file($_FILES["file"]["tmp_name"], "image" . $fileName);  
       
         $productName = $_POST["productName"];
         $proDetails = $_POST["proDetails"];
