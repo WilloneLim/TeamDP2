@@ -75,7 +75,7 @@ h2{
   padding-bottom: 20px;
   padding-top: 15px;
   position:relative;
-	
+
 }
 
 /******FILTER BAR******/
@@ -352,4 +352,25 @@ fieldset,label{
 	color:#ffffff;
 
 }
- 
+
+
+#header{
+  color: #777777;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto 30px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index:3;
+}
+
+label{
+	display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    
+}
