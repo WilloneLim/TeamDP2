@@ -27,17 +27,20 @@
 		
 		if(isset($_POST['submit']))
         {
-         $file = rand(1000,100000)."-".$_FILES['file'];   
+         $fileName = rand(1000,100000)."-".$_FILES["file"]["name"];  
+         move_uploaded_file($_FILES["file"]["tmp_name"], "image" . $fileName);  
+      
         $productName = $_POST["productName"];
         $proDetails = $_POST["proDetails"];
         $typeofproduct = $_POST["typeofproduct"];
 		$productPrice = $_POST["productPrice"];
         
-        $sql = "INSERT INTO prodregister (register_name, register_details, register_categories,registrer_price,file) VALUES ('".$productName."' ,'".$proDetails."' ,'".$typeofproduct."','".$productPrice."','$file')";
+        $sql = "INSERT INTO prodregister (register_name, register_details, register_categories,registrer_price,image) VALUES ('".$productName."' ,'".$proDetails."' ,'".$typeofproduct."','".$productPrice."','$fileName')";
           
         
         if(!mysqli_query($conn, $sql))
         {
+             echo("Error description: " . mysqli_error($conn));
             echo "Not Inserted";
         }
         else
@@ -68,7 +71,7 @@
                         </div>
                         
                         <div class="panel-body">
-                            <form method="post" name="myForm" role="form" onsubmit="return checkForm(myForm);">
+                            <form method="post" name="myForm" role="form" enctype="multipart/form-data" onsubmit="return checkForm(myForm);">
                                 
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">

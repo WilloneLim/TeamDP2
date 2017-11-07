@@ -8,6 +8,7 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
                     <ul class="dropdown-menu">
+					 <li><a href="product-list.php">All Products</a></li>
                         <li><a href="clothing.php">Clothing and Accesories</a></li>
                         <li><a href="jewelry.php">Jewelry</a></li>
                         <li><a href="crafts.php">Craft Supplies</a></li>
