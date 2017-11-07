@@ -1,11 +1,19 @@
 <?php
 
-//still testing
+include ('conn.php');
 
-if(isset($_POST['checkdone']))
+sql = "DELETE * FROM cart WHERE buyer =" .$_SESSION['login_user']. "";
+
+if(mysqli_query($conn, $sql))
 {
-    echo "Hello There";
+    header('Location:index.php');
+    
+}
+else
+{
+    
 }
 
+   
 
 ?>

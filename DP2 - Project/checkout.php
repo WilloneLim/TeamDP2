@@ -74,7 +74,7 @@
              <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModal" >
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                            <form name="checkmodal" method="post">
+                            <form name="checkmodal" action="index.php" method="post">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <h4 class="modal-title" id="checkoutModalLabel">Checkout Information</h4>
@@ -91,8 +91,6 @@
                                    <thead>
                                        <th>Item</th>
                                        <th>Price</th>
-                                       
-                                       
                                    </thead>
                                    <tbody>
                                        <?php
@@ -132,7 +130,7 @@
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <input type="submit" name="checkdone" class="btn btn-primary" value="Done">
                             </div>
-                                </form>
+                            </form>
                         </div>
                     </div>
                     
