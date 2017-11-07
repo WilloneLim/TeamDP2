@@ -109,7 +109,15 @@ $('.price_range').jRange({
 });
 </script>
 	</div>
+	<form action="/action_page.php" method="get" id="price">
+	<p id="header">PRICE</p>
+  <input type="checkbox" name="price" value="p1"> RM 0 - RM 100<br>
+  <input type="checkbox" name="price" value="p2"> RM 100 - RM 150<br>
+  <input type="checkbox" name="price" value="p3"> RM 150 - RM 200<br>
+</form>
 				</div>
+				
+				
 			   
 	
 	         <div class="col-md-10">
