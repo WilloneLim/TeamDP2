@@ -44,14 +44,6 @@
         
     }
     
-    if(isset($_POST['md']))
-    {
-        
-        include ("modComments/post_comments1.php");
-    }
-
-    
-    
     ?>
 	
 	
@@ -127,15 +119,15 @@ $('.price_range').jRange({
 						<div class="single-products">
 						 <div class="products">
                         <form method="post" class="form-inline">
-						  <a href="#"><img src="<?= $product['image'] ?>" class="img-responsive" id="images" alt="product"/></a>
+						  <a href="#"><img src="<?= $product['image']; ?>" class="img-responsive" id="images" alt="product"/></a>
 						    <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
 							</div>
 							<div class="grid_1">
-						     <h2 id="price">RM <?= $product['price'] ?></h2>
+						     <h2 id="price">RM <?= $product['price']; ?></h2>
 						    </div>
-                             <input type="hidden" name="itname" value="<?= $product['title'] ?>">
-                             <input type="hidden" name="itprice" value="<?= $product['price'] ?>">
+                             <input type="hidden" name="itname" value="<?= $product['title']; ?>">
+                             <input type="hidden" name="itprice" value="<?= $product['price']; ?>">
 						     <input type="submit" name="cart" class="button" value="Add to cart">
 							 
 							 
@@ -152,7 +144,7 @@ $('.price_range').jRange({
 									<div class="modal-body">
 									  <p><?= $product['details'] ?> </p>
 									  <p>Price: RM<?= $product['price'] ?> </p>
-                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="<?= $product['image'] ?>" class="imag" alt="product"/></a></div>
+                                        <div class="zoomin frame"><div class="imag"><a href="#"><img src="<?= $product['image']; ?>" class="imag" alt="product"/></a></div>
 									</div>
 									 <script>
                                         $(document).ready(function () {
@@ -192,6 +184,12 @@ $('.price_range').jRange({
                                      
                                           
                                           <?php
+                                           
+                                           if(isset($_POST['md']))
+                                           {
+                                               
+                                               include ("modComments/post_comments1.php");
+                                           }
                                            
                                          
                                            $find_comments = mysqli_query($conn, "SELECT * FROM productcomments WHERE prod_id =" .$product['id']);
