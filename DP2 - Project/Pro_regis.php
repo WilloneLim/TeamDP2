@@ -27,15 +27,17 @@
 		
 		if(isset($_POST['submit']))
         {
-         $fileName = rand(1000,100000)."-".$_FILES["file"]["name"];  
-         move_uploaded_file($_FILES["file"]["tmp_name"], "image" . $fileName);  
+          
       
         $productName = $_POST["productName"];
         $proDetails = $_POST["proDetails"];
         $typeofproduct = $_POST["typeofproduct"];
 		$productPrice = $_POST["productPrice"];
-        
-        $sql = "INSERT INTO prodregister (register_name, register_details, register_categories,registrer_price,image) VALUES ('".$productName."' ,'".$proDetails."' ,'".$typeofproduct."','".$productPrice."','$fileName')";
+		$filetmp = $_FILES["file"]["tmp_name"];
+		$filename = $_FILES["file"]["name"];
+        $filepath = "image/".$filename;
+		  move_uploaded_file($filetmp,$filepath);
+        $sql = "INSERT INTO product (title,details,categories,price,image) VALUES ('".$productName."' ,'".$proDetails."' ,'".$typeofproduct."','".$productPrice."','$filepath')";
           
         
         if(!mysqli_query($conn, $sql))
