@@ -12,19 +12,13 @@
 	<script src="index_files/ca-pub-2074772727795809.js" type="text/javascript" async=""></script><script src="index_files/analytics.js" async=""></script>
 	<link href="css/animate.css" rel="stylesheet">
 	 <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
- <style>
-.container{padding: 20px;}
-.filter-panel{width:100%;}
-.filter-panel p{margin-right: 30px;float: left;}
-#productContainer{float: left;width: 100%;}
-</style>
+
  <link rel="stylesheet" href="filter/jquery.range.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="filter/jquery.range.js"></script>
-
+<link href='filter/jquery-ui.min.css' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body ng-app='myapp'>
 
     <?php session_start(); ?>
     <?php 
@@ -47,75 +41,25 @@
     ?>
 	
 	
-        <div class="container-fluid" style="height:100%;">
+        <div class="container" style="height:100%;" id='productCtrl' ng-controller='productCtrl'>
 			<div class="Clothing-Accesories"><!--features_items-->
 			   <h2 class="title text-center">Clothing and Accessories</h2>
 			   
 			    <div class="col-md-2">
                       <div class="left-sidebar">
 						<h2>Filters by</h2>
-						
 					
-						
-					<div class="container">
-    <div class="filter-panel">
-        <p><input type="hidden" class="price_range" value="0,300" /></p>
-        <input type="button" onclick="filterProducts()" value="FILTER" />
-    </div>
-	<script>
-function filterProducts() {
-    var price_range = $('.price_range').val();
-    $.ajax({
-        type: 'POST',
-        url: 'getProducts.php',
-        data:'price_range='+price_range,
-        beforeSend: function () {
-            $('.container').css("opacity", ".5");
-        },
-        success: function (html) {
-            $('#productContainer').html(html);
-            $('.container').css("opacity", "");
-        }
-    });
-}
-</script>
-    <div id="productContainer">
-        <?php
-        //Include database configuration file
-        include('filter/config.php');
-        
-        //get product rows
-        $query = $con->query("SELECT * FROM product ORDER BY categories DESC");
-        
-        if($query->num_rows > 0){
-                while($row = $query->fetch_assoc()){
-            ?>
+					<div class="row">
+                      <div class="filter-panel">
+                      <div id="slider"></div><br/>
+		               Range: <span id='range'></span></div>
+                     </div>
+	
+                   </div>
+
+	            </div>
 			
-        <?php }
-        }else{
-            echo 'Product(s) not found';
-        } ?>
-    </div>
-</div>
-<script>
-$('.price_range').jRange({
-	from:0,
-	to:300,
-	step:20,
-	format: 'RM %s',
-	width:100,
-	showLabels:true,
-	isRange:true
-});
-</script>
-	</div>
-	<form action="/action_page.php" method="get" id="price">
-	<p id="header">PRICE</p>
-  <input type="checkbox" name="price" value="p1"> RM 0 - RM 100<br>
-  <input type="checkbox" name="price" value="p2"> RM 100 - RM 150<br>
-  <input type="checkbox" name="price" value="p3"> RM 150 - RM 200<br>
-</form>
-				</div>
+			</div>
 				
 				
 			   
@@ -124,16 +68,16 @@ $('.price_range').jRange({
                  <?php while($product = mysqli_fetch_assoc($results)) : ?>
 				<div class="col-sm-3">
 					<div class="product-image-wrapper">
-						<div class="single-products">
-						 <div class="products">
-                        <form method="post" class="form-inline">
-						  <a href="#"><img src="<?= $product['image']; ?>" class="img-responsive" id="images" alt="product"/></a>
-						    <div class="middle">
+					    <div class="row">
+						    <div class="products" ng-repeat="image in image">
+                             <form method="post" class="form-inline">
+						      <img ng-src={{product/image}}></img><br>
+						      <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
-							</div>
-							<div class="grid_1">
-						     <h2 id="price">RM <?= $product['price']; ?></h2>
-						    </div>
+							  </div>
+							  <div class="grid_1">
+						       <h2 id="price">RM <?= $product['price']; ?></h2>
+						       </div>
                              <input type="hidden" name="itname" value="<?= $product['title']; ?>">
                              <input type="hidden" name="itprice" value="<?= $product['price']; ?>">
 						     <input type="submit" name="cart" class="button" value="Add to cart">
@@ -224,7 +168,7 @@ $('.price_range').jRange({
 							  <!-- End ofModal code -->
 							 
                              </form>
-					     </div>
+					        </div>
 				        </div>
 				    </div>
 				</div>
@@ -232,8 +176,8 @@ $('.price_range').jRange({
 				<?php endwhile; ?>
 				
 			  </div>
-			</div>
 		</div>
+		
 		
     <a href="#" class="back-to-top" >
      <i class="fa fa-arrow-up"></i>
@@ -250,8 +194,9 @@ $('.price_range').jRange({
     <!-- Basic AngularJS -->
     <script src="js/angular.min.js"></script>
 	<script src="js/jquery.js"></script>
-	<script src="filter/jquery.range.js"></script>
     <script src="js/main.js"></script>
+	<script src='filter/jquery-ui.min.js' type='text/javascript'></script>
+
     <script>
     	$('.back-to-top').css({"display": "none"});
         jQuery(document).ready(function() {
@@ -272,5 +217,58 @@ $('.price_range').jRange({
      })
      });
     </script>
+	
+	<script type='text/javascript'>
+        // jQuery
+        $(document).ready(function(){
+
+            // Initializing slider
+            $( "#slider" ).slider({
+                range: true,
+                min: 0,
+                max: 300,
+                values: [ 0, 300 ],
+                slide: function( event, ui ) {
+
+                    // Get values
+                    var min = ui.values[0];
+                    var max = ui.values[1];
+                    $('#range').text(min+' - ' + max);
+                    
+                    // Call Angular method
+                    angular.element('#productCtrl').scope().priceFilter(min,max);
+                    angular.element('#productCtrl').scope().$apply() 
+                }
+            });
+        });
+
+        // Angular JS
+        var products = angular.module('myapp', []);
+  
+        products.controller('productCtrl', ['$scope', '$http', function ($scope, $http) {
+
+            $http({
+                method: 'post',
+                url: 'filter/getProducts.php',
+                data: {task:1},
+            }).then(function successCallback(response) { 
+                // Store response data
+                $scope.products = response.data;
+            });
+
+            $scope.priceFilter = function(min,max){
+                
+                $http({
+                method: 'post',
+                url: 'filter/getProducts.php',
+                data: {min:min,max:max,task:2},
+                }).then(function successCallback(response) { 
+                    // Store response data
+                    $scope.products = response.data;
+                });
+            }
+        
+        }]); 
+        </script>
     </body>
 </html>    
