@@ -1,29 +1,31 @@
 <?php
-if(isset($_POST['price_range'])){
-    
-    //Include database configuration file
-    include('filter/config.php');
-    
-    //set conditions for filter by price range
-    $whereSQL = $orderSQL = '';
-    $priceRange = $_POST['price_range'];
-    if(!empty($priceRange)){
-        $priceRangeArr = explode(',', $priceRange);
-        $whereSQL = "WHERE price BETWEEN '".$priceRangeArr[0]."' AND '".$priceRangeArr[1]."'";
-        $orderSQL = " ORDER BY price ASC ";
-    }else{
-        $orderSQL = " ORDER BY categories DESC ";
-    }
-    
-    //get product rows
-    $query = $con->query("SELECT * FROM product $whereSQL $orderSQL");
-    
-    if($query->num_rows > 0){
-        while($row = $query->fetch_assoc()){
-    ?>
-    <?php }
-    }else{
-        echo 'Product(s) not found';
+
+include 'filter/config.php';
+
+$data = json_decode(file_get_contents("php://input"));
+
+$task = $data->task;
+
+$response = array();
+// get all products
+if($task == 1){
+    $query = 'SELECT * FROM product ORDER BY price ASC';
+    $result = mysqli_query($con,$query);
+    while($row = mysqli_fetch_array($result) ){
+        $response[] = $row;
     }
 }
-?>
+
+// filter products by price
+if($task == 2){
+    $min = $data->min;
+    $max = $data->max;
+
+    $query = 'SELECT * FROM product WHERE price BETWEEN "'.$min.'" and "'.$max.'" ORDER BY price ASC';
+    $result = mysqli_query($con,$query);
+    while($row = mysqli_fetch_array($result) ){
+        $response[] = $row;
+    }
+}
+
+echo json_encode($response);
