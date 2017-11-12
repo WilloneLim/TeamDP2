@@ -69,9 +69,9 @@
 				<div class="col-sm-3">
 					<div class="product-image-wrapper">
 					    <div class="row">
-						    <div class="products" ng-repeat="image in image">
+						    <div class="products">
                              <form method="post" class="form-inline">
-						      <img ng-src={{product/image}}></img><br>
+						      <a href="#"><img src="<?= $product['image'] ?>" class="img-responsive" id="images" alt="product"/></a>
 						      <div class="middle">
 							  <a href="#"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">About Product</button></a>
 							  </div>
