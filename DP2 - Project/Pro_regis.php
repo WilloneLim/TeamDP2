@@ -18,7 +18,7 @@
     <![endif]-->
     </head>
   <body id="signupbd">
-        
+        <?php session_start(); ?>
         <?php include("include/navigation.php"); ?>
 		
 		
@@ -27,13 +27,18 @@
 		
 		if(isset($_POST['submit']))
         {
-         $file = rand(1000,100000)."-".$_FILES['file'];   
         $productName = $_POST["productName"];
         $proDetails = $_POST["proDetails"];
         $typeofproduct = $_POST["typeofproduct"];
 		$productPrice = $_POST["productPrice"];
+            $filetmp = $_FILES["file"]["tmp_name"];
+            $filename = $_FILES["file"]["name"];
+            $filepath = "image/".$filename;
+            
+            move_uploaded_file($filetmp, $filepath);
+            
         
-        $sql = "INSERT INTO prodregister (register_name, register_details, register_categories,registrer_price,file) VALUES ('".$productName."' ,'".$proDetails."' ,'".$typeofproduct."','".$productPrice."','$file')";
+        $sql = "INSERT INTO product (title, price, categories, image, details) VALUES ('".$productName."' , '".$productPrice."' , '".$typeofproduct."', '".$filepath."', '".$proDetails."')";
           
         
         if(!mysqli_query($conn, $sql))
@@ -64,11 +69,11 @@
                 <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Product Registratin</h3>
+                            <h3 class="panel-title">Product Registration</h3>
                         </div>
                         
                         <div class="panel-body">
-                            <form method="post" name="myForm" role="form" onsubmit="return checkForm(myForm);">
+                            <form method="post" name="myForm" role="form" onsubmit="return checkForm(myForm);" enctype="multipart/form-data">
                                 
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -101,7 +106,7 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label for="usr">Product Price:</label>
-											<input type="text" name="productPrice" id="Price" class="form-control input-sm" placeholder="Product Proce" required>
+											<input type="text" name="productPrice" id="Price" class="form-control input-sm" placeholder="Product Price" required>
                                         </div>
                                     </div>
                                 </div>

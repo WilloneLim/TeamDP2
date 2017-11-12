@@ -127,7 +127,7 @@
                                 </table>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                
                                 <input type="submit" name="checkdone" class="btn btn-primary" value="Done">
                             </div>
                             </form>

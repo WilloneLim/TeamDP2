@@ -54,67 +54,22 @@
 			    <div class="col-md-2">
                       <div class="left-sidebar">
 						<h2>Filters by</h2>
-						
-					
-						
-					<div class="container">
-    <div class="filter-panel">
-        <p><input type="hidden" class="price_range" value="0,300" /></p>
-        <input type="button" onclick="filterProducts()" value="FILTER" />
-    </div>
-	<script>
-function filterProducts() {
-    var price_range = $('.price_range').val();
-    $.ajax({
-        type: 'POST',
-        url: 'getProducts.php',
-        data:'price_range='+price_range,
-        beforeSend: function () {
-            $('.container').css("opacity", ".5");
-        },
-        success: function (html) {
-            $('#productContainer').html(html);
-            $('.container').css("opacity", "");
-        }
-    });
-}
-</script>
-    <div id="productContainer">
-        <?php
-        //Include database configuration file
-        include('filter/config.php');
-        
-        //get product rows
-        $query = $con->query("SELECT * FROM product ORDER BY categories DESC");
-        
-        if($query->num_rows > 0){
-                while($row = $query->fetch_assoc()){
-            ?>
-			
-        <?php }
-        }else{
-            echo 'Product(s) not found';
-        } ?>
-    </div>
-</div>
-<script>
-$('.price_range').jRange({
-	from:0,
-	to:300,
-	step:20,
-	format: 'RM %s',
-	width:100,
-	showLabels:true,
-	isRange:true
-});
-</script>
-	</div>
+                          <div class="container">
+                              <form >
+                                  <input type="checkbox" name="fl1" data-ng-model="fl1" value="filter1 ">RM 100 - RM 150<br />
+                                  <input type="checkbox" name="fl2" data-ng-model="fl2" value="filter2 ">RM 150 - RM 200<br />
+                                  <input type="checkbox" name="fl3" data-ng-model="fl3" value="filter3 ">RM 250 - RM 300<br />
+                              </form>
+                          </div>
+
+
+	                  </div>
 				</div>
 			   
 	
 	         <div class="col-md-10">
                  <?php while($product = mysqli_fetch_assoc($results)) : ?>
-				<div class="col-sm-3">
+				<div class="col-sm-3" data-ng-hide="fl1"  >
 					<div class="product-image-wrapper">
 						<div class="single-products">
 						 <div class="products">
@@ -142,8 +97,9 @@ $('.price_range').jRange({
 									  <h4 class="modal-title">Product Details</h4>
 									</div>
 									<div class="modal-body">
-									  <p><?= $product['details'] ?> </p>
-									  <p>Price: RM<?= $product['price'] ?> </p>
+                                        
+									  <p><?= $product['details']; ?> </p>
+									  <p>Price: RM<?= $product['price']; ?> </p>
                                         <div class="zoomin frame"><div class="imag"><a href="#"><img src="<?= $product['image']; ?>" class="imag" alt="product"/></a></div>
 									</div>
 									 <script>
